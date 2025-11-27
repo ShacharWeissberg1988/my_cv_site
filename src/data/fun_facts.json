@@ -2,24 +2,90 @@
   "didYouKnow": [
     {
       "id": 1,
-      "fact": "Did you know? Fun fact #1 about Shachar"
+      "fact": "Shachar designs high-speed PCBs that handle data at 10-25 Gbps - faster than most internet connections!"
     },
     {
       "id": 2,
-      "fact": "Did you know? Fun fact #2 about Shachar"
+      "fact": "He can design both a LiDAR sensor AND the Flutter app to control it. Hardware meets software!"
+    },
+    {
+      "id": 3,
+      "fact": "Shachar's work spans from 6GHz analog circuits to AI-powered pension platforms - truly multidisciplinary!"
+    },
+    {
+      "id": 4,
+      "fact": "He served in the Israeli Armored Corps (NASA 5000) before becoming an engineer."
+    },
+    {
+      "id": 5,
+      "fact": "Shachar has designed systems for major companies including HP, Mobileye, Innoviz, and IAI."
+    },
+    {
+      "id": 6,
+      "fact": "His startup PensionAI was selected for Azure sponsorship at Microsoft!"
+    },
+    {
+      "id": 7,
+      "fact": "He managed an 8-engineer integration team at Opsys while still hands-on with PCB design."
+    },
+    {
+      "id": 8,
+      "fact": "Shachar is fluent in both Hebrew (native) and English, and speaks multiple programming languages too!"
+    },
+    {
+      "id": 9,
+      "fact": "From multi-layer PCBs to Docker containers - he bridges the physical and digital worlds."
+    },
+    {
+      "id": 10,
+      "fact": "He specializes in Signal & Power Integrity - making sure electrons behave exactly as they should!"
     }
   ],
   "volunteering": [
     {
-      "organization": "Volunteer Organization",
-      "role": "Volunteer Role",
-      "description": "Description of volunteering activity",
-      "year": "2023"
+      "organization": "Knafaim Shel Krembo (Krembo Wings)",
+      "role": "Guide & Counselor",
+      "description": "Volunteered as a guide for youth with autism in the Krembo Wings project, providing support, guidance, and creating inclusive experiences for children with special needs.",
+      "year": "Multiple years",
+      "impact": "Helping children with autism develop social skills and participate in community activities"
+    },
+    {
+      "organization": "The Noar H'aoved (Working Youth)",
+      "role": "Counselor",
+      "description": "Served as a counselor in the Noar H'aoved youth movement, mentoring and guiding young people through educational and social programs.",
+      "year": "Multiple years",
+      "impact": "Youth mentorship and community leadership development"
     }
   ],
   "hobbies": [
-    "Hobby 1",
-    "Hobby 2",
-    "Hobby 3"
-  ]
+    "High-Speed PCB Design",
+    "LiDAR & Optical Systems",
+    "Flutter App Development",
+    "AI & Machine Learning",
+    "System Integration",
+    "Technical Leadership",
+    "Mentoring Engineers",
+    "Building Multi-GPU Workstations"
+  ],
+  "languages": {
+    "spoken": [
+      {
+        "language": "Hebrew",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "Fluent (Professional)"
+      }
+    ],
+    "programming": [
+      "Python",
+      "C/C++",
+      "C#",
+      "Dart",
+      "TypeScript/JavaScript",
+      "VHDL",
+      "Matlab"
+    ]
+  }
 }

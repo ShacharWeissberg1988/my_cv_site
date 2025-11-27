@@ -1,12 +1,68 @@
 {
   "timeline": [
     {
-      "company": "Company Name",
-      "position": "Senior Engineer",
-      "startDate": "2020-01",
+      "company": "PensionAI",
+      "position": "CTO & Co-Founder",
+      "startDate": "2024-01",
       "endDate": "Present",
-      "description": "Key responsibilities and achievements",
-      "technologies": ["Tech1", "Tech2"]
+      "description": "Leading technical development of AI-driven fintech platform delivering real-time pension insights and automated analysis through modern Flutter-based Web & Mobile ecosystem. Selected for Azure sponsorship at Microsoft as a chosen startup.",
+      "technologies": ["Flutter", "Dart", "FastAPI", "Node.js", "PostgreSQL", "Supabase", "Docker", "Kubernetes", "Azure OpenAI", "NGINX", "CI/CD"],
+      "highlights": [
+        "Built production-grade Flutter Web + Mobile SaaS platform",
+        "Designed scalable cloud infrastructure with Docker and Kubernetes",
+        "Integrated Azure OpenAI for automated pension analysis",
+        "Developed REST APIs with authentication and data modeling",
+        "Implemented analytics, logging, and monitoring systems",
+        "Designed multi-GPU workstation for local LLM compute",
+        "Azure sponsorship recipient at Microsoft"
+      ],
+      "logo": "pensionai"
+    },
+    {
+      "company": "Opsys Technologies",
+      "position": "Senior Hardware & System Integration Engineer",
+      "startDate": "2018-01",
+      "endDate": "2024-01",
+      "description": "Led hardware and system integration for cutting-edge solid-state LiDAR solutions combining VCSEL and CMOS SPAD arrays. Managed 8-engineer integration team and drove cross-functional collaboration.",
+      "technologies": ["FPGA", "VCSEL", "CMOS SPAD", "High-speed PCB", "OrCAD", "Allegro", "SI/PI", "C#", "Python", "JIRA", "Git"],
+      "highlights": [
+        "Designed multi-layer high-speed PCBs (10-25 Gbps, 6GHz analog)",
+        "Owned board bring-up, SI/PI analysis, and power-rail validation",
+        "Defined impedance control, stack-up structure, and DFM/DFT strategies",
+        "Led EVT/DVT/PVT qualification cycles and production readiness",
+        "Managed team of 8 system integration engineers",
+        "Collaborated across HW/FW/SW/Optics/Mechanics/RTL teams",
+        "Full schematic ownership for timing-critical mixed-signal boards"
+      ],
+      "logo": "opsys"
+    },
+    {
+      "company": "DVASH Design & Development",
+      "position": "Head of Technology Engineer",
+      "startDate": "2014-01",
+      "endDate": "2018-01",
+      "description": "Led end-to-end testing systems with custom design and development services for major clients including IAI, Applied Materials, HP, Mobileye, and Innoviz.",
+      "technologies": ["PCB Design", "OrCAD", "Allegro", ".NET", "C#", "CVI", "Python", "ATE", "Mixed-signal", "Optical Systems"],
+      "highlights": [
+        "Designed system-level board architectures for mixed-signal and optical systems",
+        "Guided PCB layout with stack-up, impedance control, and EMC/EMI considerations",
+        "Built automated test systems (ATE) with hardware, firmware, and GUI tools",
+        "Managed multidisciplinary engineering teams",
+        "Executed full engineering lifecycle: SOW → PDR → CDR → Production",
+        "Designed and delivered POCs while advising customers",
+        "Clients: IAI, Applied Materials, Electra, Waves, HP, Innoviz, Mobileye"
+      ],
+      "logo": "dvash"
     }
-  ]
+  ],
+  "education": {
+    "degree": "B.Sc. Electrical Engineering",
+    "institution": "Afeka - Tel-Aviv Academic College of Engineering",
+    "specialization": "Communication, Signals & Multimedia Processing",
+    "graduation": "2016"
+  },
+  "military": {
+    "service": "Armored Corps, NASA 5000",
+    "years": "2006-2009"
+  }
 }

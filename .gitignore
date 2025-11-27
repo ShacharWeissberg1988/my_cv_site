@@ -30,3 +30,6 @@ dist-ssr
 .env
 .env.local
 .env.*.local
+
+# Source CV documents
+docs/cv_pdf/

@@ -1,17 +1,75 @@
 {
   "skills": [
-    "System Architecture",
-    "Integration",
-    "DevOps",
-    "CI/CD",
-    "Cloud Infrastructure"
+    "System Integration (HW/SW)",
+    "System Bring-up & Validation",
+    "Requirements Definition",
+    "System Architecture Design",
+    "Multidisciplinary Project Execution",
+    "High-Speed Board Design Review",
+    "Signal & Power Integrity Analysis",
+    "Power Delivery Optimization",
+    "CPLD/FPGA Fundamentals",
+    "RTL Understanding",
+    "Technical Leadership",
+    "Cross-Team Collaboration",
+    "Python Automation & Scripting",
+    "Lab Instrumentation & Debugging"
+  ],
+  "expertise": [
+    {
+      "category": "System Engineering",
+      "skills": ["HW/SW system integration", "System bring-up and validation", "Requirements and architecture", "Multidisciplinary execution"]
+    },
+    {
+      "category": "Hardware Integration",
+      "skills": ["High-speed board design review", "SI/PI analysis", "Power delivery networks", "FPGA/RTL fundamentals", "Schematic/PCB review"]
+    },
+    {
+      "category": "Lab & Tools",
+      "skills": ["Oscilloscopes & logic analyzers", "Protocol analyzers", "SI/PI measurements", "Jitter/noise characterization", "Optical/electrical validation", "Python automation"]
+    },
+    {
+      "category": "Leadership",
+      "skills": ["Technical lead for engineering teams", "Integration process ownership", "Cross-team collaboration (HW/FW/SW/Optics/Mechanics/RTL)"]
+    }
   ],
   "projects": [
     {
-      "title": "System Project 1",
-      "description": "Description of system project",
-      "technologies": ["Docker", "Kubernetes"],
-      "year": "2024"
+      "title": "System Integration Lead (Opsys LiDAR)",
+      "description": "Managed 8-engineer integration team for solid-state LiDAR system. Led multidisciplinary collaboration across HW, FW, SW, optics, mechanics, and algorithms to streamline feature integration and resolve system-wide issues",
+      "technologies": ["System Integration", "Project Management", "JIRA", "Git", "Bitbucket", "Multi-team Coordination"],
+      "year": "2018-2024",
+      "highlights": [
+        "Managed team of 8 system integration engineers",
+        "Fostered collaboration across HW/FW/SW/Optics/Mechanics/Algorithms",
+        "Acted as system technical focal point",
+        "Completed leadership and management course",
+        "Led system-level qualification and stress testing"
+      ]
+    },
+    {
+      "title": "Multidisciplinary Project Delivery (DVASH)",
+      "description": "Led engineering teams and interfaced with customers through full project lifecycle from SOW to production acceptance",
+      "technologies": ["Project Management", "System Design", "Customer Interface", "PDR/CDR"],
+      "year": "2014-2018",
+      "highlights": [
+        "Managed multidisciplinary engineers across SW/HW tasks",
+        "Designed and delivered POCs",
+        "Advised customers on technical solutions",
+        "Full lifecycle: SOW → PDR → CDR → Integration → Acceptance"
+      ]
+    },
+    {
+      "title": "High-Frequency PCB System Integration",
+      "description": "Developed and integrated high-frequency PCBs for optical buffers in radar systems and complex space-constrained PCBs for LiDAR systems",
+      "technologies": ["High-frequency PCB", "Optical Systems", "Space-constrained Design", "Radar/LiDAR"],
+      "year": "2018-2024",
+      "highlights": [
+        "6GHz analog optical/radar transceiver boards",
+        "Space-constrained LiDAR PCB integration",
+        "EVT/DVT/PVT qualification cycles",
+        "Cross-functional HW/FW/Optics integration"
+      ]
     }
   ]
 }

@@ -1,17 +1,88 @@
 {
   "skills": [
-    "TypeScript",
-    "React",
-    "Node.js",
+    "Flutter Web & Mobile",
+    "Dart",
+    "React & TypeScript",
+    "Node.js / Express",
+    "FastAPI",
     "Python",
-    "System Architecture"
+    "C# / .NET",
+    "C / C++",
+    "PostgreSQL & Supabase",
+    "Docker & Kubernetes",
+    "CI/CD (GitHub Actions)",
+    "NGINX & Reverse Proxy",
+    "Azure OpenAI Integration",
+    "Linux Environments",
+    "Git & Version Control"
+  ],
+  "expertise": [
+    {
+      "category": "Frontend Development",
+      "skills": ["Flutter Web & Mobile", "Dart", "React", "Responsive UI", "Performance profiling", "State management (BLoC)"]
+    },
+    {
+      "category": "Backend Development",
+      "skills": ["FastAPI", "Node.js/Express", "REST APIs", "Authentication & JWT", "Middleware", "Data validation"]
+    },
+    {
+      "category": "Database & Cloud",
+      "skills": ["PostgreSQL", "Supabase", "SQL optimization", "ORMs", "Docker", "Azure VM"]
+    },
+    {
+      "category": "DevOps & Infrastructure",
+      "skills": ["Docker & Kubernetes", "CI/CD pipelines", "NGINX configuration", "SSL/TLS", "Monitoring & Analytics"]
+    }
   ],
   "projects": [
     {
-      "title": "Software Project 1",
-      "description": "Description of software project",
-      "technologies": ["React", "TypeScript"],
-      "year": "2024"
+      "title": "PensionAI - AI-Driven Fintech Platform",
+      "description": "Built production-grade SaaS platform delivering real-time pension insights with Flutter Web/Mobile frontend and FastAPI backend. Integrated Azure OpenAI for automated analysis",
+      "technologies": ["Flutter", "Dart", "FastAPI", "PostgreSQL", "Supabase", "Docker", "Kubernetes", "Azure OpenAI", "NGINX"],
+      "year": "2024-Present",
+      "highlights": [
+        "Developed Flutter Web + Mobile apps with production-grade performance",
+        "Built REST APIs with authentication and validation workflows",
+        "Designed scalable cloud infrastructure with Docker, NGINX, CI/CD",
+        "Integrated external services: Microsoft Graph/Teams, SES, GitHub",
+        "Selected for Azure sponsorship at Microsoft as a chosen startup"
+      ]
+    },
+    {
+      "title": "Automated Test Systems (DVASH)",
+      "description": "Built automated test systems (ATE) combining hardware, firmware, GUI tools and measurement frameworks for production-grade testing",
+      "technologies": [".NET", "C#", "CVI", "Python", "Test Automation"],
+      "year": "2014-2018",
+      "highlights": [
+        "Frontend development using .NET and CVI",
+        "Testing software with measurement frameworks",
+        "GUI tools for production testing",
+        "Full engineering lifecycle execution"
+      ]
+    },
+    {
+      "title": "System Integration Software (Opsys)",
+      "description": "Developed software tools for system integration, debugging, and validation of LiDAR systems",
+      "technologies": ["C#", "Python", "Linux", "CI/CD"],
+      "year": "2018-2024",
+      "highlights": [
+        "Advanced proficiency in C# and Python",
+        "Linux environment development",
+        "CI/CD pipeline integration",
+        "Collaboration across SW/HW/FW teams"
+      ]
     }
+  ],
+  "tools": [
+    "Visual Studio",
+    "VS Code",
+    "Android Studio",
+    "Figma",
+    "Git & Bitbucket",
+    "JIRA",
+    "Docker Desktop",
+    "Postman",
+    "OpenCV/EmguCV",
+    "Matlab/Simulink"
   ]
 }

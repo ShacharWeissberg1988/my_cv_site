@@ -1,17 +1,68 @@
 {
   "skills": [
-    "PCB Design",
-    "FPGA Development",
-    "Embedded Systems",
-    "Circuit Design",
-    "Signal Processing"
+    "High-Speed Board Design (10-25 Gbps / 6GHz analog)",
+    "Multi-Layer PCB Architecture (6-12 layers)",
+    "Signal & Power Integrity (SI/PI)",
+    "Power Delivery Design & Sequencing",
+    "Schematic Design (OrCAD/Allegro)",
+    "FPGA/CPLD Interfaces & Pin Planning",
+    "High-Speed Serial Links (SerDes)",
+    "DFM/DFT & Production Readiness",
+    "Lab Bring-up & Debugging",
+    "Impedance-Controlled Routing",
+    "Differential Pair Routing",
+    "HDI, Blind/Buried/Micro-via",
+    "Component Selection & BOM"
+  ],
+  "expertise": [
+    {
+      "category": "PCB Design",
+      "skills": ["Multi-layer stack-up definition", "High-density interconnect (HDI)", "Blind/buried/micro-via", "Impedance-controlled routing", "Differential pair routing"]
+    },
+    {
+      "category": "Signal Integrity",
+      "skills": ["SI/PI analysis and debugging", "Jitter/noise characterization", "High-speed probing techniques", "Return-path continuity", "Termination strategies"]
+    },
+    {
+      "category": "Lab & Validation",
+      "skills": ["Oscilloscopes & analyzers", "Power-rail validation", "Clocking verification", "Load testing", "Environmental stress testing"]
+    }
   ],
   "projects": [
     {
-      "title": "Hardware Project 1",
-      "description": "Description of hardware project",
-      "technologies": ["FPGA", "Verilog"],
-      "year": "2023"
+      "title": "LiDAR Optical Radar System (Opsys)",
+      "description": "Designed and validated multi-layer high-speed PCBs integrating FPGA logic, VCSEL/CMOS SPAD sensors, laser-driver circuits, and mixed-signal electronics for solid-state LiDAR solutions",
+      "technologies": ["FPGA", "VCSEL", "CMOS SPAD", "6GHz Analog", "PMICs", "High-speed PCB"],
+      "year": "2018-2024",
+      "highlights": [
+        "Owned board bring-up and signal-integrity measurements",
+        "Defined SI/PI constraints and stack-up structure",
+        "Led EVT/DVT/PVT qualification cycles",
+        "Full schematic ownership for timing-critical domains"
+      ]
+    },
+    {
+      "title": "Multi-GPU Workstation Design (PensionAI)",
+      "description": "Designed high-performance multi-GPU workstation and local LLM compute node with power/thermal analysis and system-level integration",
+      "technologies": ["Multi-GPU", "Power Analysis", "Thermal Design", "System Integration"],
+      "year": "2024",
+      "highlights": [
+        "Power delivery network design",
+        "Thermal management for high-power GPUs",
+        "System-level architecture"
+      ]
+    },
+    {
+      "title": "Client Test Systems (DVASH)",
+      "description": "Designed mixed-signal, optical, and high-speed digital systems for clients including IAI, HP, Mobileye, and Innoviz",
+      "technologies": ["Mixed-signal", "Optical Systems", "High-speed Digital", "ATE"],
+      "year": "2014-2018",
+      "highlights": [
+        "System-level board architectures",
+        "PCB layout guidance (stack-up, impedance, EMC/EMI)",
+        "Automated test systems (ATE)",
+        "Production-grade validation"
+      ]
     }
   ]
 }
