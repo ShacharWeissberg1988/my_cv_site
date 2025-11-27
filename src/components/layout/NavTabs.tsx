@@ -8,7 +8,7 @@ interface NavTabsProps {
   setActiveTab: (tab: string) => void;
 }
 
-const tabs = ['hw', 'sw', 'sys', 'proExperience', 'aboutMe', 'fun'];
+const tabs = ['aboutMe', 'hw', 'sw', 'sys', 'proExperience', 'fun'];
 
 export const NavTabs: React.FC<NavTabsProps> = ({ activeTab, setActiveTab }) => {
   const { t, language, setLanguage } = useI18n();

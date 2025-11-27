@@ -9,7 +9,7 @@ import { TabAboutMe } from '../sections/TabAboutMe';
 import { TabFunAndVolunteering } from '../sections/TabFunAndVolunteering';
 
 export const AppLayout: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('hw');
+  const [activeTab, setActiveTab] = useState('aboutMe');
 
   const renderTab = () => {
     switch (activeTab) {
