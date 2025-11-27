@@ -8,8 +8,7 @@ export const TabAboutMe: React.FC = () => {
   const { t } = useI18n();
   const [videoError, setVideoError] = useState(false);
   const videoPath = import.meta.env.BASE_URL + 'about-me.mp4';
-  const profileImage1 = import.meta.env.BASE_URL + 'profile-1.png';
-  const profileImage2 = import.meta.env.BASE_URL + 'profile-2.png';
+  const profileImage = import.meta.env.BASE_URL + 'profile-2.png';
 
   return (
     <motion.div
@@ -23,43 +22,29 @@ export const TabAboutMe: React.FC = () => {
         <h2 className="text-3xl font-bold gradient-text">{t('tabs.aboutMe.title')}</h2>
       </div>
 
-      {/* Profile Images Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <motion.div
-          whileHover={{ scale: 1.03, y: -5 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Card className="overflow-hidden p-0">
-            <img
-              src={profileImage1}
-              alt="Shachar Weissberg Profile 1"
-              className="w-full h-auto object-cover rounded-lg"
-            />
-          </Card>
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.03, y: -5 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Card className="overflow-hidden p-0">
-            <img
-              src={profileImage2}
-              alt="Shachar Weissberg Profile 2"
-              className="w-full h-auto object-cover rounded-lg"
-            />
-          </Card>
-        </motion.div>
-      </div>
-
       <Card>
-        <h3 className="text-2xl font-bold mb-4 gradient-text">About Shachar Weissberg</h3>
-        <div className="space-y-4 text-gray-300">
-          <p>
-            Multi-disciplinary engineer with expertise spanning hardware, software, and system engineering.
-          </p>
-          <p>
-            Passionate about creating innovative solutions that bridge the gap between different engineering domains.
-          </p>
+        <div className="flex flex-col md:flex-row gap-6 items-start">
+          {/* Profile Image */}
+          <div className="w-full md:w-1/3 flex-shrink-0">
+            <img
+              src={profileImage}
+              alt="Shachar Weissberg"
+              className="w-full h-auto object-cover rounded-lg border-2 border-primary-purple/30"
+            />
+          </div>
+
+          {/* About Text */}
+          <div className="flex-1">
+            <h3 className="text-2xl font-bold mb-4 gradient-text">About Shachar Weissberg</h3>
+            <div className="space-y-4 text-gray-300">
+              <p>
+                Multi-disciplinary engineer with expertise spanning hardware, software, and system engineering.
+              </p>
+              <p>
+                Passionate about creating innovative solutions that bridge the gap between different engineering domains.
+              </p>
+            </div>
+          </div>
         </div>
       </Card>
 
