@@ -7,6 +7,7 @@ import { TabSYS } from '../sections/TabSYS';
 import { TabProExperience } from '../sections/TabProExperience';
 import { TabAboutMe } from '../sections/TabAboutMe';
 import { TabFunAndVolunteering } from '../sections/TabFunAndVolunteering';
+import { AnimatedBackground } from '../ui/AnimatedBackground';
 
 export const AppLayout: React.FC = () => {
   const [activeTab, setActiveTab] = useState('aboutMe');
@@ -32,12 +33,17 @@ export const AppLayout: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-dark-bg">
+      <AnimatedBackground />
       <header className="bg-gradient-to-r from-dark-bg via-dark-bg-secondary to-dark-bg border-b border-dark-border">
         <div className="container mx-auto px-4 py-8">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold text-center gradient-text"
+            whileHover={{
+              textShadow: '0 0 20px rgba(147, 51, 234, 0.5), 0 0 40px rgba(6, 182, 212, 0.3)',
+            }}
+            transition={{ duration: 0.3 }}
           >
             Shachar Weissberg
           </motion.h1>
@@ -57,9 +63,10 @@ export const AppLayout: React.FC = () => {
       <main className="container mx-auto px-4 py-8">
         <motion.div
           key={activeTab}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
         >
           {renderTab()}
         </motion.div>
