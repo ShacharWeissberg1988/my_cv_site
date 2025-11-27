@@ -21,7 +21,7 @@ export const NavTabs: React.FC<NavTabsProps> = ({ activeTab, setActiveTab }) => 
     <nav className="sticky top-0 z-50 bg-dark-bg/95 backdrop-blur-sm border-b border-dark-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className="flex items-center gap-1 overflow-x-auto">
+          <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide">
             {tabs.map((tab) => (
               <motion.button
                 key={tab}

@@ -8,6 +8,8 @@ export const TabAboutMe: React.FC = () => {
   const { t } = useI18n();
   const [videoError, setVideoError] = useState(false);
   const videoPath = import.meta.env.BASE_URL + 'about-me.mp4';
+  const profileImage1 = import.meta.env.BASE_URL + 'profile-1.png';
+  const profileImage2 = import.meta.env.BASE_URL + 'profile-2.png';
 
   return (
     <motion.div
@@ -19,6 +21,34 @@ export const TabAboutMe: React.FC = () => {
       <div className="flex items-center gap-3 mb-6">
         <User className="text-primary-cyan" size={32} />
         <h2 className="text-3xl font-bold gradient-text">{t('tabs.aboutMe.title')}</h2>
+      </div>
+
+      {/* Profile Images Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <motion.div
+          whileHover={{ scale: 1.03, y: -5 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Card className="overflow-hidden p-0">
+            <img
+              src={profileImage1}
+              alt="Shachar Weissberg Profile 1"
+              className="w-full h-auto object-cover rounded-lg"
+            />
+          </Card>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.03, y: -5 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Card className="overflow-hidden p-0">
+            <img
+              src={profileImage2}
+              alt="Shachar Weissberg Profile 2"
+              className="w-full h-auto object-cover rounded-lg"
+            />
+          </Card>
+        </motion.div>
       </div>
 
       <Card>
