@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { User, Download, Play } from 'lucide-react';
+import { User, Play } from 'lucide-react';
 import { Card } from '../ui/Card';
 import { useI18n } from '../../i18n/i18nContext';
 
@@ -21,26 +21,6 @@ export const TabAboutMe: React.FC = () => {
         <h2 className="text-3xl font-bold gradient-text">{t('tabs.aboutMe.title')}</h2>
       </div>
 
-      <Card className="aspect-video bg-dark-bg-secondary flex items-center justify-center overflow-hidden">
-        {!videoError ? (
-          <video
-            controls
-            className="w-full h-full rounded-lg object-cover"
-            preload="metadata"
-            onError={() => setVideoError(true)}
-          >
-            <source src={videoPath} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <div className="flex flex-col items-center justify-center gap-4 p-8 text-center">
-            <Play className="text-primary-cyan" size={48} />
-            <p className="text-gray-400">Video introduction coming soon...</p>
-            <p className="text-sm text-gray-500">Upload your video to public/about-me.mp4</p>
-          </div>
-        )}
-      </Card>
-
       <Card>
         <h3 className="text-2xl font-bold mb-4 gradient-text">About Shachar Weissberg</h3>
         <div className="space-y-4 text-gray-300">
@@ -50,12 +30,30 @@ export const TabAboutMe: React.FC = () => {
           <p>
             Passionate about creating innovative solutions that bridge the gap between different engineering domains.
           </p>
-          <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-purple to-primary-cyan rounded-lg font-semibold hover:opacity-90 transition-opacity mt-6">
-            <Download size={20} />
-            {t('common.downloadCV')}
-          </button>
         </div>
       </Card>
+
+      <div className="max-w-3xl mx-auto">
+        <Card className="aspect-video bg-dark-bg-secondary flex items-center justify-center overflow-hidden">
+          {!videoError ? (
+            <video
+              controls
+              className="w-full h-full rounded-lg object-cover"
+              preload="metadata"
+              onError={() => setVideoError(true)}
+            >
+              <source src={videoPath} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <div className="flex flex-col items-center justify-center gap-4 p-8 text-center">
+              <Play className="text-primary-cyan" size={48} />
+              <p className="text-gray-400">Video introduction coming soon...</p>
+              <p className="text-sm text-gray-500">Upload your video to public/about-me.mp4</p>
+            </div>
+          )}
+        </Card>
+      </div>
     </motion.div>
   );
 };
