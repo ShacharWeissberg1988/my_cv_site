@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "hw": "HW",
+    "sw": "SW",
+    "sys": "SYS",
+    "proExperience": "PRO EXPERIENCE",
+    "aboutMe": "ABOUT ME",
+    "fun": "FUN"
+  },
+  "tabs": {
+    "hw": {
+      "title": "Hardware Engineering",
+      "description": "Hardware expertise and projects"
+    },
+    "sw": {
+      "title": "Software Engineering",
+      "description": "Software development and architecture"
+    },
+    "sys": {
+      "title": "System Engineering",
+      "description": "System design and integration"
+    },
+    "proExperience": {
+      "title": "Professional Experience",
+      "description": "Career timeline and achievements"
+    },
+    "aboutMe": {
+      "title": "About Me",
+      "description": "Get to know Shachar"
+    },
+    "fun": {
+      "title": "Fun & Volunteering",
+      "description": "Hobbies, volunteering, and interesting facts"
+    }
+  },
+  "common": {
+    "downloadCV": "Download CV",
+    "viewMore": "View More",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous"
+  }
+}

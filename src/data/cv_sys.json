@@ -1,0 +1,17 @@
+{
+  "skills": [
+    "System Architecture",
+    "Integration",
+    "DevOps",
+    "CI/CD",
+    "Cloud Infrastructure"
+  ],
+  "projects": [
+    {
+      "title": "System Project 1",
+      "description": "Description of system project",
+      "technologies": ["Docker", "Kubernetes"],
+      "year": "2024"
+    }
+  ]
+}

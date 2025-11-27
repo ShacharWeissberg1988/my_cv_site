@@ -1,0 +1,25 @@
+{
+  "didYouKnow": [
+    {
+      "id": 1,
+      "fact": "Did you know? Fun fact #1 about Shachar"
+    },
+    {
+      "id": 2,
+      "fact": "Did you know? Fun fact #2 about Shachar"
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": "Volunteer Organization",
+      "role": "Volunteer Role",
+      "description": "Description of volunteering activity",
+      "year": "2023"
+    }
+  ],
+  "hobbies": [
+    "Hobby 1",
+    "Hobby 2",
+    "Hobby 3"
+  ]
+}

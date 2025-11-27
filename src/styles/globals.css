@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-dark-border;
+  }
+
+  body {
+    @apply bg-dark-bg text-gray-100 antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+
+  .ltr {
+    direction: ltr;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-purple to-primary-cyan bg-clip-text text-transparent;
+  }
+
+  .card-gradient {
+    @apply bg-gradient-to-br from-dark-bg-secondary to-dark-bg-tertiary;
+  }
+}

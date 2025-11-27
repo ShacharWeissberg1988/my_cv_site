@@ -1,0 +1,17 @@
+{
+  "skills": [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Python",
+    "System Architecture"
+  ],
+  "projects": [
+    {
+      "title": "Software Project 1",
+      "description": "Description of software project",
+      "technologies": ["React", "TypeScript"],
+      "year": "2024"
+    }
+  ]
+}

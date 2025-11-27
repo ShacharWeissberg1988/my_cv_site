@@ -1,0 +1,12 @@
+{
+  "timeline": [
+    {
+      "company": "Company Name",
+      "position": "Senior Engineer",
+      "startDate": "2020-01",
+      "endDate": "Present",
+      "description": "Key responsibilities and achievements",
+      "technologies": ["Tech1", "Tech2"]
+    }
+  ]
+}

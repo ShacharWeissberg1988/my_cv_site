@@ -1,0 +1,17 @@
+{
+  "skills": [
+    "PCB Design",
+    "FPGA Development",
+    "Embedded Systems",
+    "Circuit Design",
+    "Signal Processing"
+  ],
+  "projects": [
+    {
+      "title": "Hardware Project 1",
+      "description": "Description of hardware project",
+      "technologies": ["FPGA", "Verilog"],
+      "year": "2023"
+    }
+  ]
+}
