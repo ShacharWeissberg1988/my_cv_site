@@ -1,16 +1,18 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
 import { Card } from '../ui/Card';
+import { useI18n } from '../../i18n/i18nContext';
 import funFactsData from '../../data/fun_facts.json';
 
 export const VolunteeringCards: React.FC = () => {
-  const volunteering = funFactsData.volunteering;
+  const { language } = useI18n();
+  const volunteering = funFactsData.volunteering[language as 'en' | 'he'];
 
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-2 mb-4">
         <Heart className="text-primary-purple" size={24} />
-        <h3 className="text-2xl font-bold gradient-text">Volunteering</h3>
+        <h3 className="text-2xl font-bold gradient-text">{language === 'he' ? 'התנדבות' : 'Volunteering'}</h3>
       </div>
       {volunteering.map((item, index) => (
         <Card key={index}>

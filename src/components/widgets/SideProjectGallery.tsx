@@ -6,8 +6,8 @@ import { useI18n } from '../../i18n/i18nContext';
 import funFactsData from '../../data/fun_facts.json';
 
 export const SideProjectGallery: React.FC = () => {
-  const { t } = useI18n();
-  const projects = funFactsData.sideProjects;
+  const { t, language } = useI18n();
+  const projects = funFactsData.sideProjects[language as 'en' | 'he'];
 
   return (
     <Card>

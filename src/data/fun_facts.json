@@ -1,86 +1,170 @@
 {
-  "didYouKnow": [
-    {
-      "id": 1,
-      "fact": "Shachar designs high-speed PCBs that handle data at 10-25 Gbps - faster than most internet connections!"
-    },
-    {
-      "id": 2,
-      "fact": "He can design both a LiDAR sensor AND the Flutter app to control it. Hardware meets software!"
-    },
-    {
-      "id": 3,
-      "fact": "Shachar's work spans from 6GHz analog circuits to AI-powered pension platforms - truly multidisciplinary!"
-    },
-    {
-      "id": 4,
-      "fact": "He served in the Israeli Armored Corps (NASA 5000) before becoming an engineer."
-    },
-    {
-      "id": 5,
-      "fact": "Shachar has designed systems for major companies including HP, Mobileye, Innoviz, and IAI."
-    },
-    {
-      "id": 6,
-      "fact": "His startup PensionAI was selected for Azure sponsorship at Microsoft!"
-    },
-    {
-      "id": 7,
-      "fact": "He managed an 8-engineer integration team at Opsys while still hands-on with PCB design."
-    },
-    {
-      "id": 8,
-      "fact": "Shachar is fluent in both Hebrew (native) and English, and speaks multiple programming languages too!"
-    },
-    {
-      "id": 9,
-      "fact": "From multi-layer PCBs to Docker containers - he bridges the physical and digital worlds."
-    },
-    {
-      "id": 10,
-      "fact": "He specializes in Signal & Power Integrity - making sure electrons behave exactly as they should!"
-    },
-    {
-      "id": 11,
-      "fact": "Shachar knows how to do carpentry and welding, and swears he won't buy any more furniture."
-    },
-    {
-      "id": 12,
-      "fact": "He was a youth movement counselor and also teaches photons how to move - literally!"
-    },
-    {
-      "id": 13,
-      "fact": "Shachar has written thousands of lines of code, but still writes shopping lists by hand."
-    },
-    {
-      "id": 14,
-      "fact": "Not just a CTO - he's also the Chief Tool Organizer in his workshop."
-    },
-    {
-      "id": 15,
-      "fact": "Shachar volunteered with children on the autism spectrum and also made robots understand him."
-    },
-    {
-      "id": 16,
-      "fact": "He builds PCBs, shelves, and coffee corners - not necessarily in that order."
-    },
-    {
-      "id": 17,
-      "fact": "247 cups of coffee consumed this month. Half of them during compilation time."
-    },
-    {
-      "id": 18,
-      "fact": "Average weekly sleep hours: Yes, depends if it's a Sprint or a Deadline."
-    },
-    {
-      "id": 19,
-      "fact": "Builds apps by day - and coffee tables by night."
-    },
-    {
-      "id": 20,
-      "fact": "A project that started as a joke - ended up in actual production. Classic."
-    }
-  ],
+  "didYouKnow": {
+    "en": [
+      {
+        "id": 1,
+        "fact": "Shachar designs high-speed PCBs that handle data at 10-25 Gbps - faster than most internet connections!"
+      },
+      {
+        "id": 2,
+        "fact": "He can design both a LiDAR sensor AND the Flutter app to control it. Hardware meets software!"
+      },
+      {
+        "id": 3,
+        "fact": "Shachar's work spans from 6GHz analog circuits to AI-powered pension platforms - truly multidisciplinary!"
+      },
+      {
+        "id": 4,
+        "fact": "He served in the Israeli Armored Corps (NASA 5000) before becoming an engineer."
+      },
+      {
+        "id": 5,
+        "fact": "Shachar has designed systems for major companies including HP, Mobileye, Innoviz, and IAI."
+      },
+      {
+        "id": 6,
+        "fact": "His startup PensionAI was selected for Azure sponsorship at Microsoft!"
+      },
+      {
+        "id": 7,
+        "fact": "He managed an 8-engineer integration team at Opsys while still hands-on with PCB design."
+      },
+      {
+        "id": 8,
+        "fact": "Shachar is fluent in both Hebrew (native) and English, and speaks multiple programming languages too!"
+      },
+      {
+        "id": 9,
+        "fact": "From multi-layer PCBs to Docker containers - he bridges the physical and digital worlds."
+      },
+      {
+        "id": 10,
+        "fact": "He specializes in Signal & Power Integrity - making sure electrons behave exactly as they should!"
+      },
+      {
+        "id": 11,
+        "fact": "Shachar knows how to do carpentry and welding, and swears he won't buy any more furniture."
+      },
+      {
+        "id": 12,
+        "fact": "He was a youth movement counselor and also teaches photons how to move - literally!"
+      },
+      {
+        "id": 13,
+        "fact": "Shachar has written thousands of lines of code, but still writes shopping lists by hand."
+      },
+      {
+        "id": 14,
+        "fact": "Not just a CTO - he's also the Chief Tool Organizer in his workshop."
+      },
+      {
+        "id": 15,
+        "fact": "Shachar volunteered with children on the autism spectrum and also made robots understand him."
+      },
+      {
+        "id": 16,
+        "fact": "He builds PCBs, shelves, and coffee corners - not necessarily in that order."
+      },
+      {
+        "id": 17,
+        "fact": "247 cups of coffee consumed this month. Half of them during compilation time."
+      },
+      {
+        "id": 18,
+        "fact": "Average weekly sleep hours: Yes, depends if it's a Sprint or a Deadline."
+      },
+      {
+        "id": 19,
+        "fact": "Builds apps by day - and coffee tables by night."
+      },
+      {
+        "id": 20,
+        "fact": "A project that started as a joke - ended up in actual production. Classic."
+      }
+    ],
+    "he": [
+      {
+        "id": 1,
+        "fact": "שחר מתכנן PCB מהירים שמעבירים נתונים ב-10-25 Gbps - מהיר יותר מרוב חיבורי האינטרנט!"
+      },
+      {
+        "id": 2,
+        "fact": "הוא יכול לתכנן גם חיישן LiDAR וגם את אפליקציית Flutter שמפעילה אותו. חומרה פוגשת תוכנה!"
+      },
+      {
+        "id": 3,
+        "fact": "עבודתו של שחר משתרעת ממעגלים אנלוגיים ב-6GHz ועד פלטפורמות פנסיה מבוססות AI - באמת רב-תחומי!"
+      },
+      {
+        "id": 4,
+        "fact": "הוא שירת בחיל השריון (נאס\"א 5000) לפני שהפך למהנדס."
+      },
+      {
+        "id": 5,
+        "fact": "שחר תיכנן מערכות עבור חברות גדולות כולל HP, Mobileye, Innoviz ו-IAI."
+      },
+      {
+        "id": 6,
+        "fact": "הסטארטאפ שלו PensionAI נבחר לחסות Azure של Microsoft!"
+      },
+      {
+        "id": 7,
+        "fact": "הוא ניהל צוות אינטגרציה של 8 מהנדסים ב-Opsys תוך כדי עבודה מעשית על עיצוב PCB."
+      },
+      {
+        "id": 8,
+        "fact": "שחר שולט בעברית (שפת אם) ואנגלית, ומדבר גם במספר שפות תכנות!"
+      },
+      {
+        "id": 9,
+        "fact": "מ-PCB רב-שכבתי ועד מכולות Docker - הוא מגשר בין העולם הפיזי לדיגיטלי."
+      },
+      {
+        "id": 10,
+        "fact": "הוא מתמחה בשלמות אות והספק - מוודא שהאלקטרונים מתנהגים בדיוק כפי שצריך!"
+      },
+      {
+        "id": 11,
+        "fact": "שחר יודע לנגר ומרתך ונשבע לא לקנות יותר רהיטים."
+      },
+      {
+        "id": 12,
+        "fact": "הוא היה מדריך בתנועת נוער וגם מלמד פוטונים איך לנוע - ממש!"
+      },
+      {
+        "id": 13,
+        "fact": "שחר כתב אלפי שורות קוד, אבל עדיין כותב את רשימות הקניות ביד."
+      },
+      {
+        "id": 14,
+        "fact": "לא רק CTO - הוא גם המארגן הראשי של הכלים בסדנה."
+      },
+      {
+        "id": 15,
+        "fact": "שחר התנדב עם ילדים על הספקטרום האוטיסטי וגם גרם לרובוטים להבין אותו."
+      },
+      {
+        "id": 16,
+        "fact": "הוא בונה PCB, מדפים ופינות קפה - לא בהכרח בסדר הזה."
+      },
+      {
+        "id": 17,
+        "fact": "247 כוסות קפה נצרכו החודש. חצי מזה בזמן קומפילציה."
+      },
+      {
+        "id": 18,
+        "fact": "ממוצע שעות שינה שבועי: כן, תלוי אם זה ספרינט או דדליין."
+      },
+      {
+        "id": 19,
+        "fact": "בונה אפליקציות ביום - ושולחנות קפה בלילה."
+      },
+      {
+        "id": 20,
+        "fact": "פרויקט שהתחיל כבדיחה - הסתיים בפרודקשן אמיתי. קלאסיקה."
+      }
+    ]
+  },
   "personalityTraits": {
     "creativity": 9,
     "precision": 10,
@@ -88,81 +172,164 @@
     "curiosity": 10,
     "caffeineTolerance": 11
   },
-  "sideProjects": [
-    {
-      "title": "Recycled Wood Coffee Table",
-      "icon": "🪚",
-      "description": "Handcrafted furniture from reclaimed materials"
-    },
-    {
-      "title": "Autonomous Garden Irrigation",
-      "icon": "🌿",
-      "description": "Smart watering system with soil sensors"
-    },
-    {
-      "title": "Flask + ElevenLabs Voice Server",
-      "icon": "🎤",
-      "description": "Text-to-speech API integration project"
-    },
-    {
-      "title": "DIY Laser Tripod",
-      "icon": "🔧",
-      "description": "Weekend project for precision laser alignment"
-    },
-    {
-      "title": "Multi-GPU Workstation",
-      "icon": "💻",
-      "description": "Custom-built AI/ML development rig"
-    },
-    {
-      "title": "Home Workshop Organization",
-      "icon": "🛠️",
-      "description": "Wall-mounted tool storage with label maker"
-    }
-  ],
-  "adventureScenario": {
-    "question": "The server crashed, the client is stressed, and your desk leg is wobbly. What do you do?",
-    "options": [
+  "sideProjects": {
+    "en": [
       {
-        "text": "Fix the server, obviously",
-        "response": "Classic engineer! But watch out for that laptop..."
+        "title": "Recycled Wood Coffee Table",
+        "icon": "🪚",
+        "description": "Handcrafted furniture from reclaimed materials"
       },
       {
-        "text": "Stabilize the desk first, can't let the laptop fall",
-        "response": "Practical thinking! Hardware first, then software."
+        "title": "Autonomous Garden Irrigation",
+        "icon": "🌿",
+        "description": "Smart watering system with soil sensors"
       },
       {
-        "text": "Create a solution that combines welding and Node.js",
-        "response": "Now THAT's the Shachar way! Multi-disciplinary problem solving at its finest."
+        "title": "Flask + ElevenLabs Voice Server",
+        "icon": "🎤",
+        "description": "Text-to-speech API integration project"
+      },
+      {
+        "title": "DIY Laser Tripod",
+        "icon": "🔧",
+        "description": "Weekend project for precision laser alignment"
+      },
+      {
+        "title": "Multi-GPU Workstation",
+        "icon": "💻",
+        "description": "Custom-built AI/ML development rig"
+      },
+      {
+        "title": "Home Workshop Organization",
+        "icon": "🛠️",
+        "description": "Wall-mounted tool storage with label maker"
+      }
+    ],
+    "he": [
+      {
+        "title": "שולחן קפה מעץ ממוחזר",
+        "icon": "🪚",
+        "description": "ריהוט בעבודת יד מחומרים ממוחזרים"
+      },
+      {
+        "title": "השקיה אוטונומית לגינה",
+        "icon": "🌿",
+        "description": "מערכת השקיה חכמה עם חיישני לחות אדמה"
+      },
+      {
+        "title": "שרת קול Flask + ElevenLabs",
+        "icon": "🎤",
+        "description": "פרויקט אינטגרציה של API להמרת טקסט לדיבור"
+      },
+      {
+        "title": "חצובה לייזר עשה זאת בעצמך",
+        "icon": "🔧",
+        "description": "פרויקט סוף שבוע ליישור לייזר מדויק"
+      },
+      {
+        "title": "תחנת עבודה מולטי-GPU",
+        "icon": "💻",
+        "description": "מחשב מותאם אישית לפיתוח AI/ML"
+      },
+      {
+        "title": "ארגון סדנת בית",
+        "icon": "🛠️",
+        "description": "אחסון כלים על הקיר עם מדבקות תיוג"
       }
     ]
   },
-  "volunteering": [
-    {
-      "organization": "Knafaim Shel Krembo (Krembo Wings)",
-      "role": "Guide & Counselor",
-      "description": "Volunteered as a guide for youth with autism in the Krembo Wings project, providing support, guidance, and creating inclusive experiences for children with special needs.",
-      "year": "Multiple years",
-      "impact": "Helping children with autism develop social skills and participate in community activities"
+  "adventureScenario": {
+    "en": {
+      "question": "The server crashed, the client is stressed, and your desk leg is wobbly. What do you do?",
+      "options": [
+        {
+          "text": "Fix the server, obviously",
+          "response": "Classic engineer! But watch out for that laptop..."
+        },
+        {
+          "text": "Stabilize the desk first, can't let the laptop fall",
+          "response": "Practical thinking! Hardware first, then software."
+        },
+        {
+          "text": "Create a solution that combines welding and Node.js",
+          "response": "Now THAT's the Shachar way! Multi-disciplinary problem solving at its finest."
+        }
+      ]
     },
-    {
-      "organization": "The Noar H'aoved (Working Youth)",
-      "role": "Counselor",
-      "description": "Served as a counselor in the Noar H'aoved youth movement, mentoring and guiding young people through educational and social programs.",
-      "year": "Multiple years",
-      "impact": "Youth mentorship and community leadership development"
+    "he": {
+      "question": "השרת קרס, הלקוח בלחץ, ורגל השולחן מתנדנדת. מה תעשה?",
+      "options": [
+        {
+          "text": "לתקן את השרת, ברור",
+          "response": "מהנדס קלאסי! אבל תשים לב למחשב הנייד..."
+        },
+        {
+          "text": "לייצב קודם את השולחן, שהמחשב לא יפול",
+          "response": "חשיבה מעשית! חומרה קודם, אחר כך תוכנה."
+        },
+        {
+          "text": "ליצור פתרון שמשלב ריתוך ו-Node.js",
+          "response": "זה בדיוק הסגנון של שחר! פתרון בעיות רב-תחומי ברמה הגבוהה ביותר."
+        }
+      ]
     }
-  ],
-  "hobbies": [
-    "High-Speed PCB Design",
-    "LiDAR & Optical Systems",
-    "Flutter App Development",
-    "AI & Machine Learning",
-    "System Integration",
-    "Technical Leadership",
-    "Mentoring Engineers",
-    "Building Multi-GPU Workstations"
-  ],
+  },
+  "volunteering": {
+    "en": [
+      {
+        "organization": "Knafaim Shel Krembo (Krembo Wings)",
+        "role": "Guide & Counselor",
+        "description": "Volunteered as a guide for youth with autism in the Krembo Wings project, providing support, guidance, and creating inclusive experiences for children with special needs.",
+        "year": "Multiple years",
+        "impact": "Helping children with autism develop social skills and participate in community activities"
+      },
+      {
+        "organization": "The Noar H'aoved (Working Youth)",
+        "role": "Counselor",
+        "description": "Served as a counselor in the Noar H'aoved youth movement, mentoring and guiding young people through educational and social programs.",
+        "year": "Multiple years",
+        "impact": "Youth mentorship and community leadership development"
+      }
+    ],
+    "he": [
+      {
+        "organization": "כנפיים של כרמבו",
+        "role": "מדריך ויועץ",
+        "description": "התנדב כמדריך לנוער אוטיסטי בפרויקט כנפיים של כרמבו, סיפק תמיכה, הדרכה ויצר חוויות מכילות לילדים עם צרכים מיוחדים.",
+        "year": "מספר שנים",
+        "impact": "עזרה לילדים אוטיסטים לפתח מיומנויות חברתיות ולהשתתף בפעילויות קהילתיות"
+      },
+      {
+        "organization": "הנוער העובד והלומד",
+        "role": "מדריך",
+        "description": "שימש כמדריך בתנועת הנוער העובד והלומד, ליווה והדריך צעירים בתכניות חינוכיות וחברתיות.",
+        "year": "מספר שנים",
+        "impact": "חונכות נוער ופיתוח מנהיגות קהילתית"
+      }
+    ]
+  },
+  "hobbies": {
+    "en": [
+      "High-Speed PCB Design",
+      "LiDAR & Optical Systems",
+      "Flutter App Development",
+      "AI & Machine Learning",
+      "System Integration",
+      "Technical Leadership",
+      "Mentoring Engineers",
+      "Building Multi-GPU Workstations"
+    ],
+    "he": [
+      "עיצוב PCB מהיר",
+      "מערכות LiDAR ואופטיות",
+      "פיתוח אפליקציות Flutter",
+      "בינה מלאכותית ולמידת מכונה",
+      "אינטגרציית מערכות",
+      "הנהגה טכנית",
+      "חונכות מהנדסים",
+      "בניית תחנות עבודה מולטי-GPU"
+    ]
+  },
   "languages": {
     "spoken": [
       {

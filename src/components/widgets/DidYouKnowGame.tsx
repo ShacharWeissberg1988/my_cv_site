@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Lightbulb } from 'lucide-react';
 import { Card } from '../ui/Card';
+import { useI18n } from '../../i18n/i18nContext';
 import funFactsData from '../../data/fun_facts.json';
 
 export const DidYouKnowGame: React.FC = () => {
+  const { language } = useI18n();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const facts = funFactsData.didYouKnow;
+  const facts = funFactsData.didYouKnow[language as 'en' | 'he'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,7 +22,7 @@ export const DidYouKnowGame: React.FC = () => {
     <Card className="relative overflow-hidden">
       <div className="flex items-center gap-2 mb-4">
         <Lightbulb className="text-primary-cyan" size={24} />
-        <h3 className="text-xl font-bold gradient-text">Did You Know?</h3>
+        <h3 className="text-xl font-bold gradient-text">{language === 'he' ? 'האם ידעת?' : 'Did You Know?'}</h3>
       </div>
       <AnimatePresence mode="wait">
         <motion.p

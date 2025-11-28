@@ -11,7 +11,7 @@ import { useI18n } from '../../i18n/i18nContext';
 import funFactsData from '../../data/fun_facts.json';
 
 export const TabFunAndVolunteering: React.FC = () => {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
 
   return (
     <motion.div
@@ -38,7 +38,7 @@ export const TabFunAndVolunteering: React.FC = () => {
       <Card>
         <h3 className="text-xl font-semibold mb-4 gradient-text">{t('widgets.hobbies.title')}</h3>
         <div className="flex flex-wrap gap-3">
-          {funFactsData.hobbies.map((hobby, index) => (
+          {funFactsData.hobbies[language as 'en' | 'he'].map((hobby, index) => (
             <div key={index} className="px-4 py-2 bg-dark-bg-tertiary rounded-lg border border-primary-purple/30">
               {hobby}
             </div>
