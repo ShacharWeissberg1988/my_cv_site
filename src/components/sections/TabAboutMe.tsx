@@ -24,26 +24,24 @@ export const TabAboutMe: React.FC = () => {
 
       <Card>
         <div className="flex flex-col md:flex-row gap-6 items-start">
-          {/* Profile Image */}
-          <div className="w-full md:w-1/3 flex-shrink-0">
-            <img
-              src={profileImage}
-              alt="Shachar Weissberg"
-              className="w-full h-auto object-cover rounded-lg border-2 border-primary-purple/30"
-            />
-          </div>
-
           {/* About Text */}
           <div className="flex-1">
             <h3 className="text-2xl font-bold mb-4 gradient-text">About Shachar Weissberg</h3>
-            <div className="space-y-4 text-gray-300">
-              <p>
-                Multi-disciplinary engineer with expertise spanning hardware, software, and system engineering.
-              </p>
-              <p>
-                Passionate about creating innovative solutions that bridge the gap between different engineering domains.
-              </p>
+            <div className="space-y-4 text-gray-300 leading-relaxed">
+              <p>{t('tabs.aboutMe.bio.paragraph1')}</p>
+              <p>{t('tabs.aboutMe.bio.paragraph2')}</p>
+              <p>{t('tabs.aboutMe.bio.paragraph3')}</p>
+              <p>{t('tabs.aboutMe.bio.paragraph4')}</p>
             </div>
+          </div>
+
+          {/* Profile Image */}
+          <div className="w-full md:w-auto flex-shrink-0">
+            <img
+              src={profileImage}
+              alt="Shachar Weissberg"
+              className="w-full md:w-48 lg:w-56 h-auto object-cover rounded-lg border-2 border-primary-purple/30"
+            />
           </div>
         </div>
       </Card>

@@ -26,7 +26,13 @@
     },
     "aboutMe": {
       "title": "About Me",
-      "description": "Get to know Shachar"
+      "description": "Get to know Shachar",
+      "bio": {
+        "paragraph1": "I'm Shachar Weissberg, an Electrical & Systems Engineer with over a decade of experience in high-performance hardware development and complex system integration across LiDAR, radar, optical, and defense technologies.",
+        "paragraph2": "I specialize in designing high-speed PCBs, power and signal integrity, and leading multidisciplinary system development — integrating optics, FPGA, embedded software, and algorithmic components. Over the years, I've led end-to-end R&D processes, from early prototyping to production-grade deployment.",
+        "paragraph3": "Most recently, I served as CTO and co-founder of a fintech startup, where I led the cloud infrastructure, backend architecture, and AI-driven software modules — building a scalable, production-ready platform from scratch. This role connected my deep hardware background with modern full-stack and DevOps practices (Flutter, FastAPI, Supabase, Azure, NGINX), and sharpened my system thinking and product leadership.",
+        "paragraph4": "I bring a unique blend of engineering precision, system-level vision, and hands-on execution, and I'm currently seeking my next challenge — where I can lead meaningful technology and deliver impactful solutions."
+      }
     },
     "fun": {
       "title": "Fun & Volunteering",
