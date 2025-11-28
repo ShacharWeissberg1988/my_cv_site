@@ -45,5 +45,35 @@
     "close": "Close",
     "next": "Next",
     "previous": "Previous"
+  },
+  "widgets": {
+    "personalityStats": {
+      "title": "Personality Traits",
+      "traits": {
+        "creativity": "Creativity",
+        "precision": "Precision",
+        "empathy": "Empathy",
+        "curiosity": "Curiosity",
+        "caffeineTolerance": "Caffeine Tolerance"
+      },
+      "descriptions": {
+        "creativity": "Thinking outside the PCB",
+        "precision": "Down to the nanometer",
+        "empathy": "Team player & mentor",
+        "curiosity": "Always learning",
+        "caffeineTolerance": "Off the charts!"
+      }
+    },
+    "chooseAdventure": {
+      "title": "Choose Your Adventure",
+      "tryAnother": "Try Another Answer"
+    },
+    "sideProjects": {
+      "title": "Side Projects & DIY",
+      "quote": "Engineering isn't just what I do at work - it's how I approach life!"
+    },
+    "hobbies": {
+      "title": "Hobbies & Interests"
+    }
   }
 }

@@ -45,5 +45,35 @@
     "close": "סגור",
     "next": "הבא",
     "previous": "הקודם"
+  },
+  "widgets": {
+    "personalityStats": {
+      "title": "תכונות אישיות",
+      "traits": {
+        "creativity": "יצירתיות",
+        "precision": "דיוק",
+        "empathy": "אמפתיה",
+        "curiosity": "סקרנות",
+        "caffeineTolerance": "סבילות לקפאין"
+      },
+      "descriptions": {
+        "creativity": "חושב מחוץ ל-PCB",
+        "precision": "עד לננומטר",
+        "empathy": "שחקן צוות ומנטור",
+        "curiosity": "תמיד לומד",
+        "caffeineTolerance": "מעל הגרף!"
+      }
+    },
+    "chooseAdventure": {
+      "title": "בחר את ההרפתקה שלך",
+      "tryAnother": "נסה תשובה אחרת"
+    },
+    "sideProjects": {
+      "title": "פרויקטים צדדיים ועשה זאת בעצמך",
+      "quote": "הנדסה זה לא רק מה שאני עושה בעבודה - זה איך שאני ניגש לחיים!"
+    },
+    "hobbies": {
+      "title": "תחביבים ותחומי עניין"
+    }
   }
 }

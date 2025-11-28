@@ -4,6 +4,9 @@ import { Sparkles } from 'lucide-react';
 import { Card } from '../ui/Card';
 import { DidYouKnowGame } from '../widgets/DidYouKnowGame';
 import { VolunteeringCards } from '../widgets/VolunteeringCards';
+import { PersonalityStats } from '../widgets/PersonalityStats';
+import { ChooseAdventure } from '../widgets/ChooseAdventure';
+import { SideProjectGallery } from '../widgets/SideProjectGallery';
 import { useI18n } from '../../i18n/i18nContext';
 import funFactsData from '../../data/fun_facts.json';
 
@@ -24,10 +27,16 @@ export const TabFunAndVolunteering: React.FC = () => {
 
       <DidYouKnowGame />
 
+      <PersonalityStats />
+
+      <ChooseAdventure />
+
+      <SideProjectGallery />
+
       <VolunteeringCards />
 
       <Card>
-        <h3 className="text-xl font-semibold mb-4 gradient-text">Hobbies & Interests</h3>
+        <h3 className="text-xl font-semibold mb-4 gradient-text">{t('widgets.hobbies.title')}</h3>
         <div className="flex flex-wrap gap-3">
           {funFactsData.hobbies.map((hobby, index) => (
             <div key={index} className="px-4 py-2 bg-dark-bg-tertiary rounded-lg border border-primary-purple/30">
