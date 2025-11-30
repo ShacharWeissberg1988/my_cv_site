@@ -36,11 +36,19 @@ export const TabFunAndVolunteering: React.FC = () => {
       <VolunteeringCards />
 
       <Card>
-        <h3 className="text-xl font-semibold mb-4 gradient-text">{t('widgets.hobbies.title')}</h3>
-        <div className="flex flex-wrap gap-3">
-          {funFactsData.hobbies[language as 'en' | 'he'].map((hobby, index) => (
-            <div key={index} className="px-4 py-2 bg-dark-bg-tertiary rounded-lg border border-primary-purple/30">
-              {hobby}
+        <h3 className="text-2xl font-bold mb-6 gradient-text">{t('widgets.hobbies.title')}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {funFactsData.hobbies[language as 'en' | 'he'].map((hobbyCategory, index) => (
+            <div key={index} className="space-y-3">
+              <h4 className="text-lg font-semibold text-primary-cyan">{hobbyCategory.category}</h4>
+              <ul className="space-y-2">
+                {hobbyCategory.items.map((item, i) => (
+                  <li key={i} className="text-sm text-gray-300 flex items-start gap-2">
+                    <span className="text-primary-purple mt-1">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
