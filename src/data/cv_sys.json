@@ -1,75 +1,214 @@
 {
-  "skills": [
-    "System Integration (HW/SW)",
-    "System Bring-up & Validation",
-    "Requirements Definition",
-    "System Architecture Design",
-    "Multidisciplinary Project Execution",
-    "High-Speed Board Design Review",
-    "Signal & Power Integrity Analysis",
-    "Power Delivery Optimization",
-    "CPLD/FPGA Fundamentals",
-    "RTL Understanding",
-    "Technical Leadership",
-    "Cross-Team Collaboration",
-    "Python Automation & Scripting",
-    "Lab Instrumentation & Debugging"
-  ],
-  "expertise": [
-    {
-      "category": "System Engineering",
-      "skills": ["HW/SW system integration", "System bring-up and validation", "Requirements and architecture", "Multidisciplinary execution"]
-    },
-    {
-      "category": "Hardware Integration",
-      "skills": ["High-speed board design review", "SI/PI analysis", "Power delivery networks", "FPGA/RTL fundamentals", "Schematic/PCB review"]
-    },
-    {
-      "category": "Lab & Tools",
-      "skills": ["Oscilloscopes & logic analyzers", "Protocol analyzers", "SI/PI measurements", "Jitter/noise characterization", "Optical/electrical validation", "Python automation"]
-    },
-    {
-      "category": "Leadership",
-      "skills": ["Technical lead for engineering teams", "Integration process ownership", "Cross-team collaboration (HW/FW/SW/Optics/Mechanics/RTL)"]
-    }
-  ],
-  "projects": [
-    {
-      "title": "System Integration Lead (Opsys LiDAR)",
-      "description": "Managed 8-engineer integration team for solid-state LiDAR system. Led multidisciplinary collaboration across HW, FW, SW, optics, mechanics, and algorithms to streamline feature integration and resolve system-wide issues",
-      "technologies": ["System Integration", "Project Management", "JIRA", "Git", "Bitbucket", "Multi-team Coordination"],
-      "year": "2018-2024",
-      "highlights": [
-        "Managed team of 8 system integration engineers",
-        "Fostered collaboration across HW/FW/SW/Optics/Mechanics/Algorithms",
-        "Acted as system technical focal point",
-        "Completed leadership and management course",
-        "Led system-level qualification and stress testing"
-      ]
-    },
-    {
-      "title": "Multidisciplinary Project Delivery (DVASH)",
-      "description": "Led engineering teams and interfaced with customers through full project lifecycle from SOW to production acceptance",
-      "technologies": ["Project Management", "System Design", "Customer Interface", "PDR/CDR"],
-      "year": "2014-2018",
-      "highlights": [
-        "Managed multidisciplinary engineers across SW/HW tasks",
-        "Designed and delivered POCs",
-        "Advised customers on technical solutions",
-        "Full lifecycle: SOW → PDR → CDR → Integration → Acceptance"
-      ]
-    },
-    {
-      "title": "High-Frequency PCB System Integration",
-      "description": "Developed and integrated high-frequency PCBs for optical buffers in radar systems and complex space-constrained PCBs for LiDAR systems",
-      "technologies": ["High-frequency PCB", "Optical Systems", "Space-constrained Design", "Radar/LiDAR"],
-      "year": "2018-2024",
-      "highlights": [
-        "6GHz analog optical/radar transceiver boards",
-        "Space-constrained LiDAR PCB integration",
-        "EVT/DVT/PVT qualification cycles",
-        "Cross-functional HW/FW/Optics integration"
-      ]
-    }
-  ]
+  "about": {
+    "en": "System Engineer with 10+ years of hands-on experience in multidisciplinary HW/SW development, system bring-up, high-speed board integration, lab validation, power delivery optimization, and cross-team debugging. Proven technical leadership across complex hardware platforms including LiDAR, radar, and high-bandwidth digital systems. Strong ownership mindset, deep understanding of system architecture, and extensive lab, measurement, and verification experience.",
+    "he": "מהנדס מערכות עם למעלה מ-10 שנות ניסיון מעשי בפיתוח HW/SW רב-תחומי, הרמת מערכות, אינטגרציה של לוחות מהירים, אימות מעבדה, אופטימיזציית אספקת הספק ואיתור באגים בין-צוותי. מנהיגות טכנית מוכחת בפלטפורמות חומרה מורכבות כולל LiDAR, מכ\"ם ומערכות דיגיטליות ברוחב פס גבוה. חשיבה בעלת אחריות חזקה, הבנה עמוקה של ארכיטקטורת מערכות וניסיון נרחב במעבדה, מדידה ואימות."
+  },
+  "skills": {
+    "en": [
+      "System Engineering: Integration of complex HW/SW systems",
+      "System bring-up, validation, and debugging",
+      "Requirements definition & system architecture",
+      "Multidisciplinary project execution",
+      "Hardware: High-speed board design review, SI/PI analysis",
+      "Power delivery networks, high-current design",
+      "CPLD/FPGA fundamentals, RTL understanding",
+      "Schematic/PCB review (OrCAD, Allegro)",
+      "Lab: Oscilloscopes, logic analyzers, protocol analyzers",
+      "SI/PI measurements, jitter/noise characterization",
+      "Python automation, data logging, test development",
+      "Leadership: Technical lead for multidisciplinary teams"
+    ],
+    "he": [
+      "הנדסת מערכות: אינטגרציה של מערכות HW/SW מורכבות",
+      "הרמת מערכות, אימות ואיתור באגים",
+      "הגדרת דרישות וארכיטקטורת מערכות",
+      "ביצוע פרויקטים רב-תחומיים",
+      "חומרה: סקירת תכנון לוח מהיר, ניתוח SI/PI",
+      "רשתות אספקת הספק, תכנון זרם גבוה",
+      "יסודות CPLD/FPGA, הבנת RTL",
+      "סקירת סכמטי/PCB (OrCAD, Allegro)",
+      "מעבדה: אוסילוסקופים, מנתחי לוגיקה, מנתחי פרוטוקול",
+      "מדידות SI/PI, אפיון jitter/noise",
+      "אוטומציית Python, רישום נתונים, פיתוח בדיקות",
+      "מנהיגות: מוביל טכני לצוותים רב-תחומיים"
+    ]
+  },
+  "expertise": {
+    "en": [
+      {
+        "category": "System Engineering",
+        "skills": [
+          "Integration of complex HW/SW systems",
+          "System bring-up, validation, and debugging",
+          "Requirements definition & system architecture",
+          "Multidisciplinary project execution"
+        ]
+      },
+      {
+        "category": "Hardware Engineering",
+        "skills": [
+          "High-speed board design review",
+          "Signal Integrity (SI) & Power Integrity (PI)",
+          "Power delivery networks, high-current design",
+          "CPLD/FPGA fundamentals, RTL understanding",
+          "Schematic/PCB review (OrCAD, Allegro)"
+        ]
+      },
+      {
+        "category": "Lab & Tools",
+        "skills": [
+          "Oscilloscopes, logic analyzers, protocol analyzers",
+          "SI/PI measurements, jitter/noise characterization",
+          "Bench instrumentation, optical/electrical validation",
+          "Python automation, data logging, test development"
+        ]
+      },
+      {
+        "category": "Leadership",
+        "skills": [
+          "Technical lead for multidisciplinary engineering teams",
+          "Ownership of integration processes",
+          "Collaboration across board design, FW, SW, mechanics, optics, RTL"
+        ]
+      }
+    ],
+    "he": [
+      {
+        "category": "הנדסת מערכות",
+        "skills": [
+          "אינטגרציה של מערכות HW/SW מורכבות",
+          "הרמת מערכות, אימות ואיתור באגים",
+          "הגדרת דרישות וארכיטקטורת מערכות",
+          "ביצוע פרויקטים רב-תחומיים"
+        ]
+      },
+      {
+        "category": "הנדסת חומרה",
+        "skills": [
+          "סקירת תכנון לוח מהיר",
+          "שלמות אות (SI) ושלמות הספק (PI)",
+          "רשתות אספקת הספק, תכנון זרם גבוה",
+          "יסודות CPLD/FPGA, הבנת RTL",
+          "סקירת סכמטי/PCB (OrCAD, Allegro)"
+        ]
+      },
+      {
+        "category": "מעבדה וכלים",
+        "skills": [
+          "אוסילוסקופים, מנתחי לוגיקה, מנתחי פרוטוקול",
+          "מדידות SI/PI, אפיון jitter/noise",
+          "מכשור ספסל, אימות אופטי/חשמלי",
+          "אוטומציית Python, רישום נתונים, פיתוח בדיקות"
+        ]
+      },
+      {
+        "category": "מנהיגות",
+        "skills": [
+          "מוביל טכני לצוותי הנדסה רב-תחומיים",
+          "בעלות על תהליכי אינטגרציה",
+          "שיתוף פעולה בין תכנון לוח, FW, SW, מכניקה, אופטיקה, RTL"
+        ]
+      }
+    ]
+  },
+  "workExperience": {
+    "en": [
+      {
+        "company": "PensionAI",
+        "position": "CTO & Co-Founder",
+        "period": "2024 – Present",
+        "duration": "",
+        "companyDescription": "PensionAI is an AI-driven fintech platform that delivers real-time pension insights, automated analysis, and smart agent tools through a modern Flutter-based Web & Mobile ecosystem",
+        "description": "",
+        "responsibilities": [
+          "Technical leadership and strategic direction",
+          "System-level integration and architecture",
+          "Cross-functional collaboration across product, engineering, and design",
+          "Infrastructure planning and deployment strategy"
+        ],
+        "technologies": ["System Architecture", "Technical Leadership", "Multi-GPU Systems", "Infrastructure Planning"]
+      },
+      {
+        "company": "Opsys Technologies",
+        "position": "System Integration & Management Lead",
+        "period": "2018 – 2024",
+        "duration": "6 years",
+        "companyDescription": "Opsys Technologies develops cutting-edge solid-state LiDAR solutions with no moving parts. Its proprietary technology combines VCSEL and CMOS SPAD arrays for high-performance and safety.",
+        "responsibilities": [
+          "Managed a team of eight system integration engineers, fostering collaboration across software, hardware, mechanics, optics, and algorithms departments to streamline new feature integrations and troubleshoot system-wide issues",
+          "Project Management & Collaboration: Proficient in JIRA, GIT, and Bitbucket; completed a leadership and management course to enhance team management and project oversight",
+          "Programming & Software Development: Advanced proficiency in C#, Python, Linux environments, CI/CD pipelines",
+          "Developed high-frequency PCBs for optical buffers in radar systems and complex, space-constrained PCBs for Lidar systems",
+          "Led system-level qualification, environmental stress testing, and production readiness improvements"
+        ],
+        "technologies": ["System Integration", "Team Management", "JIRA", "Git", "Bitbucket", "C#", "Python", "Linux", "CI/CD"]
+      },
+      {
+        "company": "DVASH Design & Development",
+        "position": "Head of Technology Engineer",
+        "period": "2014 – 2018",
+        "duration": "4 years",
+        "companyDescription": "Specialized in end-to-end testing systems with custom design and development services for clients such as IAI, Applied Materials, Electra, Waves, HP, Innoviz, Mobileye",
+        "responsibilities": [
+          "Specialized in analog/digital circuit design",
+          "Testing software including frontend using .NET and CVI",
+          "Developed automated test systems (ATE)",
+          "Managed multidisciplinary engineers across SW/HW tasks and project delivery",
+          "Designed and delivered POCs while advising customers on optimal technical solutions",
+          "Executed full engineering lifecycle: SOW → design reviews → integration → final acceptance testing"
+        ],
+        "technologies": ["System Design", "ATE", ".NET", "CVI", "Project Management", "Customer Interface"],
+        "clients": ["IAI", "Applied Materials", "Electra", "Waves", "HP", "Innoviz", "Mobileye"]
+      }
+    ],
+    "he": [
+      {
+        "company": "PensionAI",
+        "position": "CTO ומייסד שותף",
+        "period": "2024 – עד היום",
+        "duration": "",
+        "companyDescription": "PensionAI היא פלטפורמת פינטק מבוססת AI המספקת תובנות פנסיה בזמן אמת, ניתוח אוטומטי וכלי סוכן חכם דרך מערכת אקולוגית מודרנית מבוססת Flutter ל-Web ו-Mobile",
+        "description": "",
+        "responsibilities": [
+          "מנהיגות טכנית וכיוון אסטרטגי",
+          "אינטגרציה וארכיטקטורה ברמת המערכת",
+          "שיתוף פעולה בין-תפקודי בין מוצר, הנדסה ועיצוב",
+          "תכנון תשתיות ואסטרטגיית פריסה"
+        ],
+        "technologies": ["ארכיטקטורת מערכות", "מנהיגות טכנית", "מערכות Multi-GPU", "תכנון תשתיות"]
+      },
+      {
+        "company": "Opsys Technologies",
+        "position": "מוביל אינטגרציית מערכות וניהול",
+        "period": "2018 – 2024",
+        "duration": "6 שנים",
+        "companyDescription": "Opsys Technologies מפתחת פתרונות LiDAR מתקדמים ללא חלקים נעים. הטכנולוגיה הקניינית משלבת מערכי VCSEL ו-CMOS SPAD לביצועים גבוהים ובטיחות.",
+        "responsibilities": [
+          "ניהול צוות של שמונה מהנדסי אינטגרציית מערכות, טיפוח שיתוף פעולה בין מחלקות תוכנה, חומרה, מכניקה, אופטיקה ואלגוריתמים לייעול אינטגרציות תכונות חדשות ופתרון בעיות ברחבי המערכת",
+          "ניהול פרויקטים ושיתוף פעולה: מיומנות ב-JIRA, GIT ו-Bitbucket; השלמת קורס מנהיגות וניהול לשיפור ניהול צוות ופיקוח על פרויקטים",
+          "תכנות ופיתוח תוכנה: מיומנות מתקדמת ב-C#, Python, סביבות Linux, צינורות CI/CD",
+          "פיתוח PCB בתדרים גבוהים עבור מאגרים אופטיים במערכות מכ\"ם ו-PCB מורכבים מוגבלי מקום עבור מערכות Lidar",
+          "הוביל הסמכה ברמת המערכת, בדיקות מתח סביבתי ושיפורי מוכנות לייצור"
+        ],
+        "technologies": ["אינטגרציית מערכות", "ניהול צוות", "JIRA", "Git", "Bitbucket", "C#", "Python", "Linux", "CI/CD"]
+      },
+      {
+        "company": "DVASH עיצוב ופיתוח",
+        "position": "ראש מהנדסי טכנולוגיה",
+        "period": "2014 – 2018",
+        "duration": "4 שנים",
+        "companyDescription": "התמחות במערכות בדיקה מקצה לקצה עם שירותי עיצוב ופיתוח מותאמים אישית עבור לקוחות כגון תעא, Applied Materials, אלקטרה, Waves, HP, Innoviz, Mobileye",
+        "responsibilities": [
+          "התמחות בעיצוב מעגלים אנלוגיים/דיגיטליים",
+          "תוכנת בדיקה כולל frontend באמצעות .NET ו-CVI",
+          "פיתוח מערכות בדיקה אוטומטיות (ATE)",
+          "ניהול מהנדסים רב-תחומיים במשימות SW/HW ומסירת פרויקטים",
+          "תכנון ומסירת POC תוך ייעוץ ללקוחות על פתרונות טכניים אופטימליים",
+          "ביצוע מחזור הנדסי מלא: SOW → סקירות עיצוב → אינטגרציה → בדיקת קבלה סופית"
+        ],
+        "technologies": ["תכנון מערכות", "ATE", ".NET", "CVI", "ניהול פרויקטים", "ממשק לקוח"],
+        "clients": ["תעא", "Applied Materials", "אלקטרה", "Waves", "HP", "Innoviz", "Mobileye"]
+      }
+    ]
+  }
 }

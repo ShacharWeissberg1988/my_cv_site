@@ -1,88 +1,218 @@
 {
-  "skills": [
-    "Flutter Web & Mobile",
-    "Dart",
-    "React & TypeScript",
-    "Node.js / Express",
-    "FastAPI",
-    "Python",
-    "C# / .NET",
-    "C / C++",
-    "PostgreSQL & Supabase",
-    "Docker & Kubernetes",
-    "CI/CD (GitHub Actions)",
-    "NGINX & Reverse Proxy",
-    "Azure OpenAI Integration",
-    "Linux Environments",
-    "Git & Version Control"
-  ],
-  "expertise": [
-    {
-      "category": "Frontend Development",
-      "skills": ["Flutter Web & Mobile", "Dart", "React", "Responsive UI", "Performance profiling", "State management (BLoC)"]
-    },
-    {
-      "category": "Backend Development",
-      "skills": ["FastAPI", "Node.js/Express", "REST APIs", "Authentication & JWT", "Middleware", "Data validation"]
-    },
-    {
-      "category": "Database & Cloud",
-      "skills": ["PostgreSQL", "Supabase", "SQL optimization", "ORMs", "Docker", "Azure VM"]
-    },
-    {
-      "category": "DevOps & Infrastructure",
-      "skills": ["Docker & Kubernetes", "CI/CD pipelines", "NGINX configuration", "SSL/TLS", "Monitoring & Analytics"]
-    }
-  ],
-  "projects": [
-    {
-      "title": "PensionAI - AI-Driven Fintech Platform",
-      "description": "Built production-grade SaaS platform delivering real-time pension insights with Flutter Web/Mobile frontend and FastAPI backend. Integrated Azure OpenAI for automated analysis",
-      "technologies": ["Flutter", "Dart", "FastAPI", "PostgreSQL", "Supabase", "Docker", "Kubernetes", "Azure OpenAI", "NGINX"],
-      "year": "2024-Present",
-      "highlights": [
-        "Developed Flutter Web + Mobile apps with production-grade performance",
-        "Built REST APIs with authentication and validation workflows",
-        "Designed scalable cloud infrastructure with Docker, NGINX, CI/CD",
-        "Integrated external services: Microsoft Graph/Teams, SES, GitHub",
-        "Selected for Azure sponsorship at Microsoft as a chosen startup"
-      ]
-    },
-    {
-      "title": "Automated Test Systems (DVASH)",
-      "description": "Built automated test systems (ATE) combining hardware, firmware, GUI tools and measurement frameworks for production-grade testing",
-      "technologies": [".NET", "C#", "CVI", "Python", "Test Automation"],
-      "year": "2014-2018",
-      "highlights": [
-        "Frontend development using .NET and CVI",
-        "Testing software with measurement frameworks",
-        "GUI tools for production testing",
-        "Full engineering lifecycle execution"
-      ]
-    },
-    {
-      "title": "System Integration Software (Opsys)",
-      "description": "Developed software tools for system integration, debugging, and validation of LiDAR systems",
-      "technologies": ["C#", "Python", "Linux", "CI/CD"],
-      "year": "2018-2024",
-      "highlights": [
-        "Advanced proficiency in C# and Python",
-        "Linux environment development",
-        "CI/CD pipeline integration",
-        "Collaboration across SW/HW/FW teams"
-      ]
-    }
-  ],
-  "tools": [
-    "Visual Studio",
-    "VS Code",
-    "Android Studio",
-    "Figma",
-    "Git & Bitbucket",
-    "JIRA",
-    "Docker Desktop",
-    "Postman",
-    "OpenCV/EmguCV",
-    "Matlab/Simulink"
-  ]
+  "about": {
+    "en": "Senior Fullstack & Flutter Web/Mobile Developer with end-to-end experience building production-grade SaaS systems. Expert in Flutter Web & Mobile, backend APIs (FastAPI/Node), cloud, CI/CD, and delivering high-performance, scalable features. Strong product mindset with deep collaboration across product/design/engineering.",
+    "he": "מפתח בכיר Fullstack ו-Flutter Web/Mobile עם ניסיון מקצה לקצה בבניית מערכות SaaS ברמת ייצור. מומחה ב-Flutter Web ו-Mobile, API של backend (FastAPI/Node), ענן, CI/CD ומספק תכונות בעלות ביצועים גבוהים וניתנות להרחבה. חשיבה מוצרית חזקה עם שיתוף פעולה עמוק עם צוותי מוצר/עיצוב/הנדסה."
+  },
+  "skills": {
+    "en": [
+      "Flutter Web & Mobile, Dart, responsive UI, performance profiling",
+      "Backend: Node.js/Express, FastAPI, REST APIs, auth, middleware, validation",
+      "Databases: PostgreSQL, Supabase, SQL, ORMs, optimization",
+      "DevOps: Docker, CI/CD (GitHub Actions), NGINX, Azure VM, SSL, monitoring",
+      "Cloud & Infra: Dockerized services, observability, analytics",
+      "AI Integrations: Azure OpenAI, automated workflows",
+      "Programming: C++, C, C#, Python, Linux, Matlab, VHDL",
+      "Tools: Visual Studio, Android Studio, Figma, Git, OpenCV/EmguCV"
+    ],
+    "he": [
+      "Flutter Web ו-Mobile, Dart, UI רספונסיבי, ניתוח ביצועים",
+      "Backend: Node.js/Express, FastAPI, REST APIs, אימות, middleware, אימות נתונים",
+      "מסדי נתונים: PostgreSQL, Supabase, SQL, ORMs, אופטימיזציה",
+      "DevOps: Docker, CI/CD (GitHub Actions), NGINX, Azure VM, SSL, ניטור",
+      "ענן ותשתיות: שירותי Docker, ניטור, אנליטיקה",
+      "אינטגרציות AI: Azure OpenAI, זרימות עבודה אוטומטיות",
+      "תכנות: C++, C, C#, Python, Linux, Matlab, VHDL",
+      "כלים: Visual Studio, Android Studio, Figma, Git, OpenCV/EmguCV"
+    ]
+  },
+  "expertise": {
+    "en": [
+      {
+        "category": "Frontend Development",
+        "skills": [
+          "Flutter Web & Mobile",
+          "Dart programming",
+          "Responsive UI design",
+          "Performance profiling",
+          "State management"
+        ]
+      },
+      {
+        "category": "Backend Development",
+        "skills": [
+          "FastAPI / Node.js/Express",
+          "REST APIs",
+          "Authentication & JWT",
+          "Middleware workflows",
+          "Data validation"
+        ]
+      },
+      {
+        "category": "Database & Cloud",
+        "skills": [
+          "PostgreSQL & Supabase",
+          "SQL optimization",
+          "ORMs",
+          "Docker & Kubernetes",
+          "Azure VM deployment"
+        ]
+      },
+      {
+        "category": "DevOps & Infrastructure",
+        "skills": [
+          "CI/CD (GitHub Actions)",
+          "NGINX reverse proxy",
+          "SSL/TLS configuration",
+          "Monitoring & analytics",
+          "Dockerized services"
+        ]
+      }
+    ],
+    "he": [
+      {
+        "category": "פיתוח Frontend",
+        "skills": [
+          "Flutter Web ו-Mobile",
+          "תכנות Dart",
+          "עיצוב UI רספונסיבי",
+          "ניתוח ביצועים",
+          "ניהול מצב"
+        ]
+      },
+      {
+        "category": "פיתוח Backend",
+        "skills": [
+          "FastAPI / Node.js/Express",
+          "REST APIs",
+          "אימות ו-JWT",
+          "זרימות Middleware",
+          "אימות נתונים"
+        ]
+      },
+      {
+        "category": "מסד נתונים וענן",
+        "skills": [
+          "PostgreSQL ו-Supabase",
+          "אופטימיזציית SQL",
+          "ORMs",
+          "Docker ו-Kubernetes",
+          "פריסת Azure VM"
+        ]
+      },
+      {
+        "category": "DevOps ותשתיות",
+        "skills": [
+          "CI/CD (GitHub Actions)",
+          "NGINX reverse proxy",
+          "הגדרת SSL/TLS",
+          "ניטור ואנליטיקה",
+          "שירותי Docker"
+        ]
+      }
+    ]
+  },
+  "workExperience": {
+    "en": [
+      {
+        "company": "PensionAI",
+        "position": "CTO & Fullstack/Flutter Developer",
+        "period": "2024 – Present",
+        "duration": "",
+        "companyDescription": "PensionAI is an AI-driven fintech platform that delivers real-time pension insights, automated analysis, and smart agent tools through a modern Flutter-based Web & Mobile ecosystem",
+        "description": "",
+        "responsibilities": [
+          "Developed Flutter Web + Mobile apps with production-grade performance",
+          "Built backend APIs (FastAPI), auth flows, data modeling, and automation",
+          "Designed scalable cloud infra: Docker and Kubernetes, NGINX, CI/CD, SSL, JWT, monitoring",
+          "Built analytics, logging, profiling tools for performance and reliability",
+          "Integrated external services: Graph/Teams, SES, Supabase, GitHub",
+          "Azure sponsorship at Microsoft as a chosen startup"
+        ],
+        "technologies": ["Flutter", "Dart", "FastAPI", "Node.js", "PostgreSQL", "Supabase", "Docker", "Kubernetes", "NGINX", "Azure OpenAI", "CI/CD"]
+      },
+      {
+        "company": "Opsys Technologies",
+        "position": "Software Development & System Integration",
+        "period": "2018 – 2024",
+        "duration": "6 years",
+        "companyDescription": "Opsys Technologies develops cutting-edge solid-state LiDAR solutions with no moving parts. Its proprietary technology combines VCSEL and CMOS SPAD arrays for high-performance and safety.",
+        "responsibilities": [
+          "Managed a team of eight system integration engineers, fostering collaboration across software, hardware, mechanics, optics, and algorithms departments",
+          "Programming & Software Development: Advanced proficiency in C#, Python, Linux environments, CI/CD pipelines",
+          "Project Management & Collaboration: Proficient in JIRA, GIT, and Bitbucket",
+          "Completed leadership and management course to enhance team management and project oversight",
+          "Developed high-frequency PCBs for optical buffers in radar systems and complex, space-constrained PCBs for Lidar systems"
+        ],
+        "technologies": ["C#", "Python", "Linux", "CI/CD", "JIRA", "Git", "Bitbucket"]
+      },
+      {
+        "company": "DVASH Design & Development",
+        "position": "Head of Technology Engineer",
+        "period": "2014 – 2018",
+        "duration": "4 years",
+        "companyDescription": "Specialized in end-to-end testing systems with custom design and development services for clients such as IAI, Applied Materials, Electra, Waves, HP, Innoviz, Mobileye",
+        "responsibilities": [
+          "Specialized in analog/digital circuit design",
+          "Testing software including frontend using .NET and CVI",
+          "Developed automated test systems (ATE)",
+          "Managed multidisciplinary engineers across SW/HW tasks and project delivery",
+          "Designed and delivered POCs while advising customers on optimal technical solutions",
+          "Executed full engineering lifecycle: SOW → design reviews → integration → final acceptance testing"
+        ],
+        "technologies": [".NET", "CVI", "C#", "Test Automation", "Automated Test Systems"],
+        "clients": ["IAI", "Applied Materials", "Electra", "Waves", "HP", "Innoviz", "Mobileye"]
+      }
+    ],
+    "he": [
+      {
+        "company": "PensionAI",
+        "position": "CTO ומפתח Fullstack/Flutter",
+        "period": "2024 – עד היום",
+        "duration": "",
+        "companyDescription": "PensionAI היא פלטפורמת פינטק מבוססת AI המספקת תובנות פנסיה בזמן אמת, ניתוח אוטומטי וכלי סוכן חכם דרך מערכת אקולוגית מודרנית מבוססת Flutter ל-Web ו-Mobile",
+        "description": "",
+        "responsibilities": [
+          "פיתוח אפליקציות Flutter Web + Mobile עם ביצועים ברמת ייצור",
+          "בניית API של backend (FastAPI), זרימות אימות, מודלים של נתונים ואוטומציה",
+          "תכנון תשתית ענן ניתנת להרחבה: Docker ו-Kubernetes, NGINX, CI/CD, SSL, JWT, ניטור",
+          "בניית כלי אנליטיקה, לוגינג וניתוח ביצועים לאמינות",
+          "אינטגרציה של שירותים חיצוניים: Graph/Teams, SES, Supabase, GitHub",
+          "חסות Azure ב-Microsoft כסטארטאפ נבחר"
+        ],
+        "technologies": ["Flutter", "Dart", "FastAPI", "Node.js", "PostgreSQL", "Supabase", "Docker", "Kubernetes", "NGINX", "Azure OpenAI", "CI/CD"]
+      },
+      {
+        "company": "Opsys Technologies",
+        "position": "פיתוח תוכנה ואינטגרציית מערכות",
+        "period": "2018 – 2024",
+        "duration": "6 שנים",
+        "companyDescription": "Opsys Technologies מפתחת פתרונות LiDAR מתקדמים ללא חלקים נעים. הטכנולוגיה הקניינית משלבת מערכי VCSEL ו-CMOS SPAD לביצועים גבוהים ובטיחות.",
+        "responsibilities": [
+          "ניהול צוות של שמונה מהנדסי אינטגרציית מערכות, טיפוח שיתוף פעולה בין מחלקות תוכנה, חומרה, מכניקה, אופטיקה ואלגוריתמים",
+          "תכנות ופיתוח תוכנה: מיומנות מתקדמת ב-C#, Python, סביבות Linux, צינורות CI/CD",
+          "ניהול פרויקטים ושיתוף פעולה: מיומנות ב-JIRA, GIT ו-Bitbucket",
+          "השלמת קורס מנהיגות וניהול לשיפור ניהול צוות ופיקוח על פרויקטים",
+          "פיתוח PCB בתדרים גבוהים עבור מאגרים אופטיים במערכות מכ\"ם ו-PCB מורכבים מוגבלי מקום עבור מערכות Lidar"
+        ],
+        "technologies": ["C#", "Python", "Linux", "CI/CD", "JIRA", "Git", "Bitbucket"]
+      },
+      {
+        "company": "DVASH עיצוב ופיתוח",
+        "position": "ראש מהנדסי טכנולוגיה",
+        "period": "2014 – 2018",
+        "duration": "4 שנים",
+        "companyDescription": "התמחות במערכות בדיקה מקצה לקצה עם שירותי עיצוב ופיתוח מותאמים אישית עבור לקוחות כגון תעא, Applied Materials, אלקטרה, Waves, HP, Innoviz, Mobileye",
+        "responsibilities": [
+          "התמחות בעיצוב מעגלים אנלוגיים/דיגיטליים",
+          "תוכנת בדיקה כולל frontend באמצעות .NET ו-CVI",
+          "פיתוח מערכות בדיקה אוטומטיות (ATE)",
+          "ניהול מהנדסים רב-תחומיים במשימות SW/HW ומסירת פרויקטים",
+          "תכנון ומסירת POC תוך ייעוץ ללקוחות על פתרונות טכניים אופטימליים",
+          "ביצוע מחזור הנדסי מלא: SOW → סקירות עיצוב → אינטגרציה → בדיקת קבלה סופית"
+        ],
+        "technologies": [".NET", "CVI", "C#", "אוטומציית בדיקות", "מערכות בדיקה אוטומטיות"],
+        "clients": ["תעא", "Applied Materials", "אלקטרה", "Waves", "HP", "Innoviz", "Mobileye"]
+      }
+    ]
+  }
 }
