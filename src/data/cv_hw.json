@@ -1,68 +1,204 @@
 {
-  "skills": [
-    "High-Speed Board Design (10-25 Gbps / 6GHz analog)",
-    "Multi-Layer PCB Architecture (6-12 layers)",
-    "Signal & Power Integrity (SI/PI)",
-    "Power Delivery Design & Sequencing",
-    "Schematic Design (OrCAD/Allegro)",
-    "FPGA/CPLD Interfaces & Pin Planning",
-    "High-Speed Serial Links (SerDes)",
-    "DFM/DFT & Production Readiness",
-    "Lab Bring-up & Debugging",
-    "Impedance-Controlled Routing",
-    "Differential Pair Routing",
-    "HDI, Blind/Buried/Micro-via",
-    "Component Selection & BOM"
-  ],
-  "expertise": [
-    {
-      "category": "PCB Design",
-      "skills": ["Multi-layer stack-up definition", "High-density interconnect (HDI)", "Blind/buried/micro-via", "Impedance-controlled routing", "Differential pair routing"]
-    },
-    {
-      "category": "Signal Integrity",
-      "skills": ["SI/PI analysis and debugging", "Jitter/noise characterization", "High-speed probing techniques", "Return-path continuity", "Termination strategies"]
-    },
-    {
-      "category": "Lab & Validation",
-      "skills": ["Oscilloscopes & analyzers", "Power-rail validation", "Clocking verification", "Load testing", "Environmental stress testing"]
-    }
-  ],
-  "projects": [
-    {
-      "title": "LiDAR Optical Radar System (Opsys)",
-      "description": "Designed and validated multi-layer high-speed PCBs integrating FPGA logic, VCSEL/CMOS SPAD sensors, laser-driver circuits, and mixed-signal electronics for solid-state LiDAR solutions",
-      "technologies": ["FPGA", "VCSEL", "CMOS SPAD", "6GHz Analog", "PMICs", "High-speed PCB"],
-      "year": "2018-2024",
-      "highlights": [
-        "Owned board bring-up and signal-integrity measurements",
-        "Defined SI/PI constraints and stack-up structure",
-        "Led EVT/DVT/PVT qualification cycles",
-        "Full schematic ownership for timing-critical domains"
-      ]
-    },
-    {
-      "title": "Multi-GPU Workstation Design (PensionAI)",
-      "description": "Designed high-performance multi-GPU workstation and local LLM compute node with power/thermal analysis and system-level integration",
-      "technologies": ["Multi-GPU", "Power Analysis", "Thermal Design", "System Integration"],
-      "year": "2024",
-      "highlights": [
-        "Power delivery network design",
-        "Thermal management for high-power GPUs",
-        "System-level architecture"
-      ]
-    },
-    {
-      "title": "Client Test Systems (DVASH)",
-      "description": "Designed mixed-signal, optical, and high-speed digital systems for clients including IAI, HP, Mobileye, and Innoviz",
-      "technologies": ["Mixed-signal", "Optical Systems", "High-speed Digital", "ATE"],
-      "year": "2014-2018",
-      "highlights": [
-        "System-level board architectures",
-        "PCB layout guidance (stack-up, impedance, EMC/EMI)",
-        "Automated test systems (ATE)",
-        "Production-grade validation"
-      ]
-    }
-  ]
+  "about": {
+    "en": "Senior Hardware & System Integration Engineer with over a decade of experience designing and validating high-speed, multi-layer PCBs, power-critical systems, and mixed-signal architectures. Strong ownership of schematic design, component selection, SI/PI-critical routing, and board-level bring-up. Experienced in FPGA/CPLD/ASIC interfacing, cross-disciplinary system integration, and driving hardware from concept through qualification and production.",
+    "he": "מהנדס בכיר לחומרה ואינטגרציית מערכות עם למעלה מעשור ניסיון בתכנון ואימות PCB רב-שכבתיים מהירים, מערכות קריטיות להספק וארכיטקטורות אות מעורב. בעלות חזקה על עיצוב סכמטי, בחירת רכיבים, ניתוב קריטי SI/PI והרמת לוחות. ניסיון בממשקי FPGA/CPLD/ASIC, אינטגרציית מערכות בין-תחומית והנעת חומרה מקונספט דרך הסמכה ועד לייצור."
+  },
+  "skills": {
+    "en": [
+      "High-Speed Board Design (10-25 Gbps / 6GHz analog)",
+      "Multi-Layer (6-12) PCB Architecture (High-Density Interconnect, Blind/Buried/micro-via, impedance-controlled stack-ups, differential pair routing)",
+      "Signal & Power Integrity (SI/PI), jitter/noise debugging",
+      "Power Delivery Design, sequencing, transient response",
+      "Schematic ownership (OrCAD/Allegro), component selection, stack-up definition",
+      "FPGA/CPLD interfaces, pin-planning, timing considerations",
+      "Lab bring-up: oscilloscopes, analyzers, load testing, high-speed probing",
+      "Cross-functional HW/FW/RTL/Optics/Mechanical integration",
+      "DFM/DFT, production readiness, qualification cycles",
+      "Technical leadership & system-level decision making",
+      "High-speed serial link routing (SerDes-based differential channels, jitter-sensitive paths)"
+    ],
+    "he": [
+      "תכנון לוחות מהירים (10-25 Gbps / אנלוגי 6GHz)",
+      "ארכיטקטורת PCB רב-שכבתי (6-12) (High-Density Interconnect, Blind/Buried/micro-via, מבנה מבוקר עכבה, ניתוב זוגות דיפרנציאליים)",
+      "שלמות אות והספק (SI/PI), איתור באגים jitter/noise",
+      "תכנון אספקת הספק, רצף, תגובה חולפת",
+      "בעלות סכמטית (OrCAD/Allegro), בחירת רכיבים, הגדרת stack-up",
+      "ממשקי FPGA/CPLD, תכנון פינים, שיקולי תזמון",
+      "הרמת מעבדה: אוסילוסקופים, מנתחים, בדיקות עומס, בדיקה מהירה",
+      "אינטגרציה בין-תפקודית HW/FW/RTL/אופטיקה/מכני",
+      "DFM/DFT, מוכנות לייצור, מחזורי הסמכה",
+      "מנהיגות טכנית וקבלת החלטות ברמת המערכת",
+      "ניתוב קישור סדרתי מהיר (ערוצים דיפרנציאליים מבוססי SerDes, נתיבים רגישי jitter)"
+    ]
+  },
+  "expertise": {
+    "en": [
+      {
+        "category": "PCB Design",
+        "skills": [
+          "Multi-layer stack-up definition",
+          "High-density interconnect (HDI)",
+          "Blind/buried/micro-via",
+          "Impedance-controlled routing",
+          "Differential pair routing"
+        ]
+      },
+      {
+        "category": "Signal Integrity",
+        "skills": [
+          "SI/PI analysis and debugging",
+          "Jitter/noise characterization",
+          "High-speed probing techniques",
+          "Return-path continuity",
+          "Termination strategies"
+        ]
+      },
+      {
+        "category": "Lab & Validation",
+        "skills": [
+          "Oscilloscopes & analyzers",
+          "Power-rail validation",
+          "Clocking verification",
+          "Load testing",
+          "Environmental stress testing"
+        ]
+      }
+    ],
+    "he": [
+      {
+        "category": "תכנון PCB",
+        "skills": [
+          "הגדרת מבנה רב-שכבתי",
+          "חיבור בצפיפות גבוהה (HDI)",
+          "Blind/buried/micro-via",
+          "ניתוב מבוקר עכבה",
+          "ניתוב זוגות דיפרנציאליים"
+        ]
+      },
+      {
+        "category": "שלמות אותות",
+        "skills": [
+          "ניתוח ואיתור באגים SI/PI",
+          "אפיון Jitter/noise",
+          "טכניקות בדיקה במהירות גבוהה",
+          "המשכיות נתיב חזרה",
+          "אסטרטגיות סיום"
+        ]
+      },
+      {
+        "category": "מעבדה ואימות",
+        "skills": [
+          "אוסילוסקופים ומנתחים",
+          "אימות רכבת הספק",
+          "אימות שעון",
+          "בדיקות עומס",
+          "בדיקות מתח סביבתי"
+        ]
+      }
+    ]
+  },
+  "workExperience": {
+    "en": [
+      {
+        "company": "PensionAI",
+        "position": "CTO & Co-Founder",
+        "period": "2024 – Lately",
+        "duration": "",
+        "description": "Leadership role. Also responsible for designing a high-performance multi-GPU workstation and local LLM compute node, including power/thermal analysis and system-level integration.",
+        "responsibilities": [
+          "Technical leadership and strategic direction",
+          "High-performance multi-GPU workstation design",
+          "Local LLM compute node architecture",
+          "Power and thermal analysis",
+          "System-level integration"
+        ],
+        "technologies": ["Multi-GPU", "LLM", "Power Analysis", "Thermal Design", "System Integration"]
+      },
+      {
+        "company": "Opsys Technologies",
+        "position": "Senior Hardware & System Integration Engineer",
+        "period": "2018 – 2024",
+        "duration": "6 years",
+        "companyDescription": "Opsys Technologies develops cutting-edge solid-state LiDAR solutions with no moving parts. Its proprietary technology combines VCSEL and CMOS SPAD arrays for high-performance and safety.",
+        "responsibilities": [
+          "Designed and validated multi-layer high-speed PCBs integrating FPGA logic, VCSEL/CMOS SPAD sensors, laser-driver circuits, PMICs and mixed-signal electronics",
+          "Owned board bring-up: power-rail validation, high-speed probing, jitter/noise debugging, clocking verification and signal-integrity measurements",
+          "Defined SI/PI constraints, impedance control rules, differential-pair routing, stack-up structure, return-path continuity, DFM/DFT and termination strategies",
+          "Worked daily with firmware, FPGA/RTL, optics, mechanical and production teams to solve complex cross-disciplinary issues across HW/SW/optical boundaries",
+          "Led system-level qualification, environmental stress testing and production readiness improvements",
+          "DFM/DFT ownership for optical/radar transceiver boards (6GHz analog), supporting EVT/DVT/PVT cycles, test-fixture development and collaboration with offshore manufacturing partners",
+          "Managed and mentored an 8-engineer integration team; acted as system technical focal point",
+          "Full schematic ownership for multiple high-speed mixed-signal boards including timing-critical and power-critical domains"
+        ],
+        "technologies": ["FPGA", "VCSEL", "CMOS SPAD", "6GHz Analog", "PMICs", "High-speed PCB", "LiDAR", "Mixed-signal"]
+      },
+      {
+        "company": "DVASH Design & Development",
+        "position": "Head of Technology Engineer",
+        "period": "2014 – 2018",
+        "duration": "4 years",
+        "companyDescription": "Specialized in end-to-end testing systems with custom design and development services for clients such as IAI, Applied Materials, Electra, Waves, HP, Innoviz, Mobileye",
+        "responsibilities": [
+          "Designed schematics and system-level board architectures for mixed-signal, optical and high-speed digital systems for clients such as IAI, HP, Mobileye and Innoviz",
+          "Guided PCB layout on stack-up, impedance control, routing topology, EMC/EMI considerations and DFM/DFT compliance",
+          "Built automated test systems (ATE), combining hardware, firmware, GUI tools and measurement frameworks for production-grade testing",
+          "Conducted hands-on bring-up, functional validation, jitter and timing analysis, power-rail testing and qualification procedures",
+          "Led multidisciplinary engineering teams and interfaced directly with customers from SOW → PDR → CDR → production acceptance"
+        ],
+        "technologies": ["Mixed-signal", "Optical Systems", "High-speed Digital", "ATE", "EMC/EMI", "Test Automation"],
+        "clients": ["IAI", "Applied Materials", "Electra", "Waves", "HP", "Innoviz", "Mobileye"]
+      }
+    ],
+    "he": [
+      {
+        "company": "PensionAI",
+        "position": "CTO ומייסד שותף",
+        "period": "2024 – עד היום",
+        "duration": "",
+        "description": "תפקיד מנהיגותי. אחראי גם על תכנון תחנת עבודה מולטי-GPU בעלת ביצועים גבוהים וצומת חישוב LLM מקומי, כולל ניתוח הספק/תרמי ואינטגרציה ברמת המערכת.",
+        "responsibilities": [
+          "מנהיגות טכנית וכיוון אסטרטגי",
+          "תכנון תחנת עבודה מולטי-GPU בעלת ביצועים גבוהים",
+          "ארכיטקטורת צומת חישוב LLM מקומי",
+          "ניתוח הספק ותרמי",
+          "אינטגרציה ברמת המערכת"
+        ],
+        "technologies": ["Multi-GPU", "LLM", "ניתוח הספק", "תכנון תרמי", "אינטגרציית מערכות"]
+      },
+      {
+        "company": "Opsys Technologies",
+        "position": "מהנדס בכיר לחומרה ואינטגרציית מערכות",
+        "period": "2018 – 2024",
+        "duration": "6 שנים",
+        "companyDescription": "Opsys Technologies מפתחת פתרונות LiDAR מתקדמים ללא חלקים נעים. הטכנולוגיה הקניינית משלבת מערכי VCSEL ו-CMOS SPAD לביצועים גבוהים ובטיחות.",
+        "responsibilities": [
+          "תכנן ואימת PCB רב-שכבתיים מהירים המשלבים לוגיקת FPGA, חיישני VCSEL/CMOS SPAD, מעגלי מנהל לייזר, PMICs ואלקטרוניקה מעורבת",
+          "אחראי על הרמת לוחות: אימות רכבת הספק, בדיקה מהירה, איתור באגים jitter/noise, אימות שעון ומדידות שלמות אותות",
+          "הגדיר אילוצי SI/PI, כללי בקרת עכבה, ניתוב זוגות דיפרנציאליים, מבנה stack-up, המשכיות נתיב חזרה, DFM/DFT ואסטרטגיות סיום",
+          "עבד יומיומית עם צוותי קושחה, FPGA/RTL, אופטיקה, מכני וייצור לפתרון בעיות מורכבות בין-תחומיות על פני גבולות HW/SW/אופטי",
+          "הוביל הסמכה ברמת המערכת, בדיקות מתח סביבתי ושיפורי מוכנות לייצור",
+          "בעלות DFM/DFT עבור לוחות משדר/מקלט אופטי/ראדאר (אנלוגי 6GHz), תמיכה במחזורי EVT/DVT/PVT, פיתוח מתקני בדיקה ושיתוף פעולה עם שותפי ייצור בחו\"ל",
+          "ניהל והדריך צוות אינטגרציה של 8 מהנדסים; שימש כנקודת מוקד טכנית של המערכת",
+          "בעלות סכמטית מלאה עבור מספר לוחות אות מעורב מהירים כולל תחומים קריטיים לתזמון והספק"
+        ],
+        "technologies": ["FPGA", "VCSEL", "CMOS SPAD", "אנלוגי 6GHz", "PMICs", "PCB מהיר", "LiDAR", "אות מעורב"]
+      },
+      {
+        "company": "DVASH עיצוב ופיתוח",
+        "position": "ראש מהנדסי טכנולוגיה",
+        "period": "2014 – 2018",
+        "duration": "4 שנים",
+        "companyDescription": "התמחות במערכות בדיקה מקצה לקצה עם שירותי עיצוב ופיתוח מותאמים אישית עבור לקוחות כגון תעא, Applied Materials, אלקטרה, Waves, HP, Innoviz, Mobileye",
+        "responsibilities": [
+          "תכנן סכמות וארכיטקטורות לוח ברמת המערכת עבור מערכות אות מעורב, אופטיות ודיגיטליות מהירות עבור לקוחות כגון תעא, HP, Mobileye ו-Innoviz",
+          "הדריך פריסת PCB על stack-up, בקרת עכבה, טופולוגיית ניתוב, שיקולי EMC/EMI ועמידה ב-DFM/DFT",
+          "בנה מערכות בדיקה אוטומטיות (ATE), משלב חומרה, קושחה, כלי GUI ומסגרות מדידה לבדיקה ברמת ייצור",
+          "ביצע הרמה מעשית, אימות פונקציונלי, ניתוח jitter ותזמון, בדיקת רכבת הספק והליכי הסמכה",
+          "הוביל צוותי הנדסה רב-תחומיים ותקשר ישירות עם לקוחות מ-SOW → PDR → CDR → קבלת ייצור"
+        ],
+        "technologies": ["אות מעורב", "מערכות אופטיות", "דיגיטלי מהיר", "ATE", "EMC/EMI", "אוטומציית בדיקות"],
+        "clients": ["תעא", "Applied Materials", "אלקטרה", "Waves", "HP", "Innoviz", "Mobileye"]
+      }
+    ]
+  }
 }
