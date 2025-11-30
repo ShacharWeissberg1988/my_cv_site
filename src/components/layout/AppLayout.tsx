@@ -4,7 +4,6 @@ import { NavTabs } from './NavTabs';
 import { TabHW } from '../sections/TabHW';
 import { TabSW } from '../sections/TabSW';
 import { TabSYS } from '../sections/TabSYS';
-import { TabProExperience } from '../sections/TabProExperience';
 import { TabAboutMe } from '../sections/TabAboutMe';
 import { TabFunAndVolunteering } from '../sections/TabFunAndVolunteering';
 import { AnimatedBackground } from '../ui/AnimatedBackground';
@@ -20,8 +19,6 @@ export const AppLayout: React.FC = () => {
         return <TabSW />;
       case 'sys':
         return <TabSYS />;
-      case 'proExperience':
-        return <TabProExperience />;
       case 'aboutMe':
         return <TabAboutMe />;
       case 'fun':
