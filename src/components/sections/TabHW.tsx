@@ -22,12 +22,6 @@ export const TabHW: React.FC = () => {
         <h2 className="text-3xl font-bold gradient-text">{t('tabs.hw.title')}</h2>
       </div>
 
-      {/* About Me Section */}
-      <Card>
-        <h3 className="text-2xl font-semibold mb-4 gradient-text">{language === 'he' ? 'אודותיי' : 'About Me'}</h3>
-        <p className="text-gray-300 leading-relaxed">{hwData.about[currentLang]}</p>
-      </Card>
-
       {/* Core Skills */}
       <Card>
         <h3 className="text-2xl font-semibold mb-4 gradient-text">{language === 'he' ? 'מיומנויות ליבה' : 'Core Skills'}</h3>
