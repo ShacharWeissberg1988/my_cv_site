@@ -177,99 +177,129 @@
       {
         "title": "Multi-GPU AI Workstation",
         "icon": "💻",
-        "description": "Custom-built rig with overclocking, stress testing, and thermal monitoring"
+        "description": "Custom-built powerhouse with dual RTX GPUs, overclocked to perfection. MSI Kombustor stress tests, thermal monitoring, and zero thermal throttling!"
       },
       {
-        "title": "Smart Garden Irrigation",
+        "title": "Automated Lychee Garden System",
         "icon": "🌿",
-        "description": "Automated watering system with soil moisture sensors for lychee trees & vegetables"
+        "description": "Smart irrigation with soil moisture sensors, automated watering schedules for lychee trees and seasonal vegetables. Includes compost integration and heavy soil treatment."
+      },
+      {
+        "title": "Custom Charcoal Asado Grill",
+        "icon": "🔥",
+        "description": "Hand-welded steel grill with adjustable grates, perfect heat distribution for Asado. Designed for fire + oven combo techniques."
+      },
+      {
+        "title": "AI Video Creation Studio",
+        "icon": "🎥",
+        "description": "Sora, Gemini & Midjourney workflow for creating custom avatars, characters, and wedding videos. Integrated with campaign design tools."
       },
       {
         "title": "Flask + ElevenLabs Voice Server",
         "icon": "🎤",
-        "description": "Text-to-speech API integration project for voiceover experiments"
+        "description": "Text-to-speech API server with custom voice profiles. Used for voiceover experiments, wedding speeches, and creative audio projects."
       },
       {
-        "title": "Custom Furniture & Woodworking",
+        "title": "Reclaimed Wood Furniture",
         "icon": "🪚",
-        "description": "Handmade tables and shelves from reclaimed wood (no more buying furniture!)"
+        "description": "Handcrafted coffee tables, shelves, and storage from reclaimed wood. Combines carpentry skills with metalwork accents. No more IKEA!"
       },
       {
-        "title": "DIY Laser Tripod",
-        "icon": "🔧",
-        "description": "Weekend project for precise laser alignment"
+        "title": "Gaming Rig Optimization Lab",
+        "icon": "🎮",
+        "description": "Apex Legends-optimized setup with custom cooling, GPU overclocking, FPS monitoring, and real-time temperature tracking."
       },
       {
-        "title": "Home Lab with Microscopes",
+        "title": "Home Optics Lab",
         "icon": "🔬",
-        "description": "Optics tinkering station with upgraded lenses and imaging equipment"
+        "description": "Microscope station with upgraded lenses, imaging equipment, and DIY laser alignment tripod for precision work."
+      },
+      {
+        "title": "Custom Fishing Tackle Setup",
+        "icon": "🎣",
+        "description": "Hand-selected lures, custom tackle configurations for different fish species. Includes fish identification photo library."
       }
     ],
     "he": [
       {
-        "title": "תחנת עבודה מולטי-GPU ל-AI",
+        "title": "תחנת עבודה מולטי-GPU מפלצתית",
         "icon": "💻",
-        "description": "מחשב מותאם אישית עם אוברקלוק, בדיקות מאמץ וניטור תרמי"
+        "description": "בנייה מותאמת אישית עם 2 כרטיסי RTX, אוברקלוק מושלם. בדיקות מאמץ MSI Kombustor, ניטור תרמי וללא ויסות תרמי!"
       },
       {
-        "title": "השקיה חכמה לגינה",
+        "title": "מערכת גינת ליצ'י אוטומטית",
         "icon": "🌿",
-        "description": "מערכת השקיה אוטומטית עם חיישני לחות אדמה לעצי ליצ'י וירקות"
+        "description": "השקיה חכמה עם חיישני לחות אדמה, לוח זמנים אוטומטי לעצי ליצ'י וירקות עונתיים. כולל אינטגרציית קומפוסט וטיפול בקרקע כבדה."
+      },
+      {
+        "title": "גריל אסאדו מפחם מותאם אישית",
+        "icon": "🔥",
+        "description": "גריל פלדה מרותך ביד עם רשתות מתכווננות, התפלגות חום מושלמת לאסאדו. מתוכנן לטכניקות אש + תנור."
+      },
+      {
+        "title": "אולפן יצירת וידאו AI",
+        "icon": "🎥",
+        "description": "זרימת עבודה של Sora, Gemini ו-Midjourney ליצירת אווטרים, דמויות וסרטוני חתונה מותאמים אישית. משולב עם כלי עיצוב קמפיינים."
       },
       {
         "title": "שרת קול Flask + ElevenLabs",
         "icon": "🎤",
-        "description": "פרויקט אינטגרציה של API להמרת טקסט לדיבור לניסויי קריינות"
+        "description": "שרת API המרת טקסט לדיבור עם פרופילי קול מותאמים אישית. משמש לניסויי קריינות, נאומי חתונה ופרויקטים אודיו יצירתיים."
       },
       {
-        "title": "רהיטים מותאמים אישית ונגרות",
+        "title": "רהיטים מעץ ממוחזר",
         "icon": "🪚",
-        "description": "שולחנות ומדפים בעבודת יד מעץ ממוחזר (לא קונים יותר רהיטים!)"
+        "description": "שולחנות קפה, מדפים ואחסון בעבודת יד מעץ ממוחזר. משלב מיומנויות נגרות עם הדגשות מתכת. לא עוד איקאה!"
       },
       {
-        "title": "חצובת לייזר עשה זאת בעצמך",
-        "icon": "🔧",
-        "description": "פרויקט סוף שבוע ליישור לייזר מדויק"
+        "title": "מעבדת אופטימיזציה לגיימינג",
+        "icon": "🎮",
+        "description": "התקנה מותאמת ל-Apex Legends עם קירור מותאם אישית, אוברקלוק GPU, ניטור FPS ומעקב טמפרטורה בזמן אמת."
       },
       {
-        "title": "מעבדת בית עם מיקרוסקופים",
+        "title": "מעבדת אופטיקה ביתית",
         "icon": "🔬",
-        "description": "תחנת התעסקות אופטית עם עדשות משודרגות וציוד הדמיה"
+        "description": "תחנת מיקרוסקופים עם עדשות משודרגות, ציוד הדמיה וחצובת יישור לייזר DIY לעבודה מדויקת."
+      },
+      {
+        "title": "התקנת ציוד דיג מותאם",
+        "icon": "🎣",
+        "description": "פתיונות נבחרים ביד, תצורות חכות מותאמות למיני דגים שונים. כולל ספריית תמונות לזיהוי דגים."
       }
     ]
   },
   "adventureScenario": {
     "en": {
-      "question": "The server crashed, the client is stressed, and your desk leg is wobbly. What do you do?",
+      "question": "It's Saturday morning: Your multi-GPU workstation is thermal throttling, the lychee trees need watering, you're grilling Asado for 20 people tonight, AND your friend needs help debugging their Flutter app. What's your move?",
       "options": [
         {
-          "text": "Fix the server, obviously",
-          "response": "Classic engineer! But watch out for that laptop..."
+          "text": "Debug the Flutter app remotely while monitoring GPU temps - multitasking!",
+          "response": "Software first? Bold! But those GPUs are still cooking... Hope you have good cooling!"
         },
         {
-          "text": "Stabilize the desk first, can't let the laptop fall",
-          "response": "Practical thinking! Hardware first, then software."
+          "text": "Set up automated irrigation for the trees, then tackle the thermal issue with better cooling",
+          "response": "Systematic approach! Automate what you can, then engineer the hard stuff. Smart thinking!"
         },
         {
-          "text": "Create a solution that combines welding and Node.js",
-          "response": "Now THAT's the Shachar way! Multi-disciplinary problem solving at its finest."
+          "text": "Weld a custom GPU cooling mount, write a script to auto-water the garden, prep the Asado, then pair-program the Flutter fix over video while the meat cooks",
+          "response": "NOW we're talking! Peak Shachar mode: Hardware + Software + Cooking + Collaboration. The ultimate multidisciplinary Saturday! 🔥💻🌿"
         }
       ]
     },
     "he": {
-      "question": "השרת קרס, הלקוח בלחץ, ורגל השולחן מתנדנדת. מה תעשה?",
+      "question": "זה שבת בבוקר: תחנת העבודה מולטי-GPU שלך בויסות תרמי, עצי הליצ'י צריכים השקיה, אתה צולה אסאדו ל-20 איש הערב, וחבר שלך צריך עזרה לתקן באג באפליקציית Flutter. מה התגובה שלך?",
       "options": [
         {
-          "text": "לתקן את השרת, ברור",
-          "response": "מהנדס קלאסי! אבל תשים לב למחשב הנייד..."
+          "text": "לתקן את ה-Flutter מרחוק תוך כדי ניטור טמפרטורות GPU - ריבוי משימות!",
+          "response": "תוכנה קודם? נועז! אבל ה-GPUs עדיין בוערים... מקווה שיש לך קירור טוב!"
         },
         {
-          "text": "לייצב קודם את השולחן, שהמחשב לא יפול",
-          "response": "חשיבה מעשית! חומרה קודם, אחר כך תוכנה."
+          "text": "להקים השקיה אוטומטית לעצים, ואז לטפל בבעיה התרמית עם קירור משופר",
+          "response": "גישה שיטתית! אוטומטי את מה שאפשר, ואז הנדס את הדברים הקשים. חשיבה חכמה!"
         },
         {
-          "text": "ליצור פתרון שמשלב ריתוך ו-Node.js",
-          "response": "זה בדיוק הסגנון של שחר! פתרון בעיות רב-תחומי ברמה הגבוהה ביותר."
+          "text": "לרתך תושבת קירור GPU מותאמת אישית, לכתוב סקריפט להשקיה אוטומטית, להכין את האסאדו, ואז לתכנת יחד את התיקון של Flutter בוידאו בזמן שהבשר מתבשל",
+          "response": "עכשיו מדברים! מצב שחר שיא: חומרה + תוכנה + בישול + שיתוף פעולה. השבת הרב-תחומית האולטימטיבית! 🔥💻🌿"
         }
       ]
     }
