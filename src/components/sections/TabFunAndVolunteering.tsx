@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 import { Card } from '../ui/Card';
 import { DidYouKnowGame } from '../widgets/DidYouKnowGame';
-import { VolunteeringCards } from '../widgets/VolunteeringCards';
 import { PersonalityStats } from '../widgets/PersonalityStats';
 import { ChooseAdventure } from '../widgets/ChooseAdventure';
 import { SideProjectGallery } from '../widgets/SideProjectGallery';
@@ -32,8 +31,6 @@ export const TabFunAndVolunteering: React.FC = () => {
       <ChooseAdventure />
 
       <SideProjectGallery />
-
-      <VolunteeringCards />
 
       <Card>
         <h3 className="text-2xl font-bold mb-6 gradient-text">{t('widgets.hobbies.title')}</h3>

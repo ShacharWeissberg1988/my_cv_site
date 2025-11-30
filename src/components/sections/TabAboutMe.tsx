@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { User, Play } from 'lucide-react';
 import { Card } from '../ui/Card';
+import { VolunteeringCards } from '../widgets/VolunteeringCards';
 import { useI18n } from '../../i18n/i18nContext';
 
 export const TabAboutMe: React.FC = () => {
@@ -67,6 +68,8 @@ export const TabAboutMe: React.FC = () => {
           )}
         </Card>
       </div>
+
+      <VolunteeringCards />
     </motion.div>
   );
 };
