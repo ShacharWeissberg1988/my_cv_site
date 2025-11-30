@@ -27,7 +27,7 @@
       },
       {
         "id": 7,
-        "fact": "He grows lychee trees and seasonal vegetables with advanced gardening techniques, soil care, and composting."
+        "fact": "He grows seasonal vegetables and fruit trees with advanced gardening techniques, soil care, and composting."
       },
       {
         "id": 8,
@@ -109,7 +109,7 @@
       },
       {
         "id": 7,
-        "fact": "מגדל עצי ליצ'י וירקות עונתיים עם טכניקות גינון מתקדמות, דישון וטיפול בקרקע."
+        "fact": "מגדל ירקות עונתיים ועצי פרי עם טכניקות גינון מתקדמות, דישון וטיפול בקרקע."
       },
       {
         "id": 8,
@@ -180,9 +180,9 @@
         "description": "Custom-built powerhouse with dual RTX GPUs, overclocked to perfection. MSI Kombustor stress tests, thermal monitoring, and zero thermal throttling!"
       },
       {
-        "title": "Automated Lychee Garden System",
+        "title": "Automated Garden System",
         "icon": "🌿",
-        "description": "Smart irrigation with soil moisture sensors, automated watering schedules for lychee trees and seasonal vegetables. Includes compost integration and heavy soil treatment."
+        "description": "Smart irrigation with soil moisture sensors, automated watering schedules for fruit trees and seasonal vegetables. Includes compost integration and heavy soil treatment."
       },
       {
         "title": "Custom Charcoal Asado Grill",
@@ -227,9 +227,9 @@
         "description": "בנייה מותאמת אישית עם 2 כרטיסי RTX, אוברקלוק מושלם. בדיקות מאמץ MSI Kombustor, ניטור תרמי וללא ויסות תרמי!"
       },
       {
-        "title": "מערכת גינת ליצ'י אוטומטית",
+        "title": "מערכת גינה אוטומטית",
         "icon": "🌿",
-        "description": "השקיה חכמה עם חיישני לחות אדמה, לוח זמנים אוטומטי לעצי ליצ'י וירקות עונתיים. כולל אינטגרציית קומפוסט וטיפול בקרקע כבדה."
+        "description": "השקיה חכמה עם חיישני לחות אדמה, לוח זמנים אוטומטי לעצי פרי וירקות עונתיים. כולל אינטגרציית קומפוסט וטיפול בקרקע כבדה."
       },
       {
         "title": "גריל אסאדו מפחם מותאם אישית",
@@ -268,41 +268,181 @@
       }
     ]
   },
-  "adventureScenario": {
-    "en": {
-      "question": "It's Saturday morning: Your multi-GPU workstation is thermal throttling, the lychee trees need watering, you're grilling Asado for 20 people tonight, AND your friend needs help debugging their Flutter app. What's your move?",
-      "options": [
-        {
-          "text": "Debug the Flutter app remotely while monitoring GPU temps - multitasking!",
-          "response": "Software first? Bold! But those GPUs are still cooking... Hope you have good cooling!"
-        },
-        {
-          "text": "Set up automated irrigation for the trees, then tackle the thermal issue with better cooling",
-          "response": "Systematic approach! Automate what you can, then engineer the hard stuff. Smart thinking!"
-        },
-        {
-          "text": "Weld a custom GPU cooling mount, write a script to auto-water the garden, prep the Asado, then pair-program the Flutter fix over video while the meat cooks",
-          "response": "NOW we're talking! Peak Shachar mode: Hardware + Software + Cooking + Collaboration. The ultimate multidisciplinary Saturday! 🔥💻🌿"
-        }
-      ]
-    },
-    "he": {
-      "question": "זה שבת בבוקר: תחנת העבודה מולטי-GPU שלך בויסות תרמי, עצי הליצ'י צריכים השקיה, אתה צולה אסאדו ל-20 איש הערב, וחבר שלך צריך עזרה לתקן באג באפליקציית Flutter. מה התגובה שלך?",
-      "options": [
-        {
-          "text": "לתקן את ה-Flutter מרחוק תוך כדי ניטור טמפרטורות GPU - ריבוי משימות!",
-          "response": "תוכנה קודם? נועז! אבל ה-GPUs עדיין בוערים... מקווה שיש לך קירור טוב!"
-        },
-        {
-          "text": "להקים השקיה אוטומטית לעצים, ואז לטפל בבעיה התרמית עם קירור משופר",
-          "response": "גישה שיטתית! אוטומטי את מה שאפשר, ואז הנדס את הדברים הקשים. חשיבה חכמה!"
-        },
-        {
-          "text": "לרתך תושבת קירור GPU מותאמת אישית, לכתוב סקריפט להשקיה אוטומטית, להכין את האסאדו, ואז לתכנת יחד את התיקון של Flutter בוידאו בזמן שהבשר מתבשל",
-          "response": "עכשיו מדברים! מצב שחר שיא: חומרה + תוכנה + בישול + שיתוף פעולה. השבת הרב-תחומית האולטימטיבית! 🔥💻🌿"
-        }
-      ]
-    }
+  "adventureScenarios": {
+    "en": [
+      {
+        "question": "It's Saturday morning: Your multi-GPU workstation is thermal throttling, the garden plants need watering, you're grilling Asado for 20 people tonight, AND your friend needs help debugging their Flutter app. What's your move?",
+        "options": [
+          {
+            "text": "Debug the Flutter app remotely while monitoring GPU temps - multitasking!",
+            "response": "Software first? Bold! But those GPUs are still cooking... Hope you have good cooling!"
+          },
+          {
+            "text": "Set up automated irrigation for the trees, then tackle the thermal issue with better cooling",
+            "response": "Systematic approach! Automate what you can, then engineer the hard stuff. Smart thinking!"
+          },
+          {
+            "text": "Weld a custom GPU cooling mount, write a script to auto-water the garden, prep the Asado, then pair-program the Flutter fix over video while the meat cooks",
+            "response": "NOW we're talking! Peak Shachar mode: Hardware + Software + Cooking + Collaboration. The ultimate multidisciplinary Saturday! 🔥💻🌿"
+          }
+        ]
+      },
+      {
+        "question": "You're creating a custom wedding video with Sora AI, but the render farm keeps crashing. Meanwhile, you promised to deliver a custom furniture piece today, and your ElevenLabs voice server needs debugging. What do you do?",
+        "options": [
+          {
+            "text": "Focus on the furniture delivery - it's promised. Debug later.",
+            "response": "Practical choice! But that wedding video won't render itself..."
+          },
+          {
+            "text": "Fix the ElevenLabs server, then optimize the Sora rendering pipeline with better GPU allocation",
+            "response": "Software-first approach! Smart to stabilize the stack before pushing more renders."
+          },
+          {
+            "text": "Build a custom GPU cooling solution for the render farm while the wood glue dries, script the ElevenLabs fix, then batch-render overnight with temp monitoring",
+            "response": "Perfect multitasking! Hardware + Software + Woodworking running in parallel. You've done this before! 🎥🪚💻"
+          }
+        ]
+      },
+      {
+        "question": "Your Apex Legends FPS just dropped to 60 (unacceptable!). You suspect thermal throttling, but you also have Asado meat marinating that needs attention in 20 minutes. What's your priority?",
+        "options": [
+          {
+            "text": "Investigate the FPS drop immediately - gaming performance is sacred!",
+            "response": "FPS is life! But that Asado isn't going to cook itself..."
+          },
+          {
+            "text": "Start the Asado prep, let the GPU cool down naturally, then troubleshoot",
+            "response": "Patient approach! Sometimes the best fix is letting hardware rest. Plus, good Asado needs attention."
+          },
+          {
+            "text": "Open MSI Kombustor for quick thermal diagnostics while prepping the grill, then overclock with custom fan curves if temps are good",
+            "response": "Efficiency master! Thermal testing + cooking prep in parallel. You know your priorities AND your hardware! 🎮🔥"
+          }
+        ]
+      },
+      {
+        "question": "You're at the beach with your custom fishing tackle, spot a rare fish species, but your phone's fish ID app crashed. Back home, your automated garden system is sending moisture alerts. What do you do?",
+        "options": [
+          {
+            "text": "Take photos of the fish manually, deal with the garden when you get back",
+            "response": "Document first, fix later? Hope those plants can wait!"
+          },
+          {
+            "text": "Head home immediately to fix the irrigation - plants can't wait",
+            "response": "Responsible gardener! But you might miss identifying that rare catch..."
+          },
+          {
+            "text": "SSH into the home server from your phone, fix the irrigation script remotely, then debug the fish ID app and identify your catch - all before casting again",
+            "response": "Remote system admin at the beach! True engineer mindset - why choose when you can do both? 🎣🌿💻"
+          }
+        ]
+      },
+      {
+        "question": "You're welding a custom steel shelf when a critical production deployment fails. The Firebase backend is down, users are complaining, but you're mid-weld and the metal is hot. What's your move?",
+        "options": [
+          {
+            "text": "Drop everything and fix the deployment - production first!",
+            "response": "Production-focused! But that hot metal might warp if you leave it now..."
+          },
+          {
+            "text": "Finish the weld safely, then investigate the Firebase issue",
+            "response": "Safety first! Rushing a weld leads to bad joints AND potential burns. Good call."
+          },
+          {
+            "text": "Finish the weld (30 seconds), SSH to the server via phone while the metal cools, rollback the deployment, then troubleshoot properly from your workstation",
+            "response": "Perfect crisis management! Safety + Speed + Systematic debugging. You've clearly handled production fires before! 🔥💻🔧"
+          }
+        ]
+      }
+    ],
+    "he": [
+      {
+        "question": "זה שבת בבוקר: תחנת העבודה מולטי-GPU שלך בויסות תרמי, הצמחים בגינה צריכים השקיה, אתה צולה אסאדו ל-20 איש הערב, וחבר שלך צריך עזרה לתקן באג באפליקציית Flutter. מה התגובה שלך?",
+        "options": [
+          {
+            "text": "לתקן את ה-Flutter מרחוק תוך כדי ניטור טמפרטורות GPU - ריבוי משימות!",
+            "response": "תוכנה קודם? נועז! אבל ה-GPUs עדיין בוערים... מקווה שיש לך קירור טוב!"
+          },
+          {
+            "text": "להקים השקיה אוטומטית לעצים, ואז לטפל בבעיה התרמית עם קירור משופר",
+            "response": "גישה שיטתית! אוטומטי את מה שאפשר, ואז הנדס את הדברים הקשים. חשיבה חכמה!"
+          },
+          {
+            "text": "לרתך תושבת קירור GPU מותאמת אישית, לכתוב סקריפט להשקיה אוטומטית, להכין את האסאדו, ואז לתכנת יחד את התיקון של Flutter בוידאו בזמן שהבשר מתבשל",
+            "response": "עכשיו מדברים! מצב שחר שיא: חומרה + תוכנה + בישול + שיתוף פעולה. השבת הרב-תחומית האולטימטיבית! 🔥💻🌿"
+          }
+        ]
+      },
+      {
+        "question": "אתה יוצר סרטון חתונה מותאם אישית עם Sora AI, אבל חוות העיבוד ממשיכה לקרוס. בינתיים, הבטחת לספק רהיט מותאם אישית היום, ושרת הקול ElevenLabs שלך צריך דיבאג. מה עושים?",
+        "options": [
+          {
+            "text": "להתמקד באספקת הרהיט - זה הובטח. לתקן מאוחר יותר.",
+            "response": "בחירה מעשית! אבל הסרטון לא יעבד את עצמו..."
+          },
+          {
+            "text": "לתקן את שרת ElevenLabs, ואז לבצע אופטימיזציה לצינור העיבוד של Sora עם הקצאת GPU טובה יותר",
+            "response": "גישת תוכנה תחילה! חכם לייצב את המערכת לפני לדחוף עוד רינדרים."
+          },
+          {
+            "text": "לבנות פתרון קירור GPU מותאם אישית לחוות העיבוד בזמן שהדבק מתייבש, לכתוב סקריפט לתיקון ElevenLabs, ואז לרנדר בבאצ'ים בלילה עם ניטור טמפ'",
+            "response": "ריבוי משימות מושלם! חומרה + תוכנה + נגרות רצים במקביל. עשית את זה קודם! 🎥🪚💻"
+          }
+        ]
+      },
+      {
+        "question": "ה-FPS ב-Apex Legends בדיוק ירד ל-60 (בלתי קביל!). אתה חושד בויסות תרמי, אבל יש לך בשר אסאדו במרינדה שצריך תשומת לב בעוד 20 דקות. מה העדיפות?",
+        "options": [
+          {
+            "text": "לחקור את ירידת ה-FPS מיד - ביצועי גיימינג הם קדושים!",
+            "response": "FPS זה חיים! אבל האסאדו לא יתבשל לבד..."
+          },
+          {
+            "text": "להתחיל את הכנת האסאדו, לתת ל-GPU להתקרר באופן טבעי, ואז לפתור בעיות",
+            "response": "גישה סבלנית! לפעמים התיקון הטוב ביותר הוא לתת לחומרה לנוח. בנוסף, אסאדו טוב צריך תשומת לב."
+          },
+          {
+            "text": "לפתוח MSI Kombustor לבדיקה תרמית מהירה תוך כדי הכנת הגריל, ואז אוברקלוק עם עקומות מאוורר מותאמות אם הטמפ' טובות",
+            "response": "מאסטר יעילות! בדיקה תרמית + הכנת בישול במקביל. אתה מכיר את העדיפויות שלך וגם את החומרה! 🎮🔥"
+          }
+        ]
+      },
+      {
+        "question": "אתה בחוף עם ציוד הדיג המותאם שלך, מזהה מין דגים נדיר, אבל אפליקציית זיהוי הדגים בטלפון קרסה. בבית, מערכת הגינה האוטומטית שולחת התראות לחות. מה עושים?",
+        "options": [
+          {
+            "text": "לצלם את הדג באופן ידני, לטפל בגינה כשחוזרים",
+            "response": "לתעד קודם, לתקן אחר כך? מקווה שהצמחים האלה יכולים לחכות!"
+          },
+          {
+            "text": "לחזור הביתה מיד לתקן את ההשקיה - צמחים לא יכולים לחכות",
+            "response": "גנן אחראי! אבל אולי תפספס לזהות את הדג הנדיר הזה..."
+          },
+          {
+            "text": "SSH לשרת הבית מהטלפון, לתקן את סקריפט ההשקיה מרחוק, ואז לתקן את אפליקציית זיהוי הדגים ולזהות את הדג - הכל לפני להטיל שוב",
+            "response": "אדמין מערכת מרחוק מהחוף! חשיבת מהנדס אמיתית - למה לבחור כשאפשר לעשות הכל? 🎣🌿💻"
+          }
+        ]
+      },
+      {
+        "question": "אתה מרתך מדף פלדה מותאם אישית כשפריסה קריטית בפרודקשן נכשלת. הבקאנד Firebase למטה, משתמשים מתלוננים, אבל אתה באמצע ריתוך והמתכת חמה. מה הצעד?",
+        "options": [
+          {
+            "text": "לעזוב הכל ולתקן את הפריסה - פרודקשן קודם!",
+            "response": "ממוקד בפרודקשן! אבל המתכת החמה עלולה להתעוות אם תעזוב אותה עכשיו..."
+          },
+          {
+            "text": "לסיים את הריתוך בבטחה, ואז לחקור את בעיית Firebase",
+            "response": "בטיחות קודם! למהר עם ריתוך מוביל לחיבורים גרועים וכוויות פוטנציאליות. קריאה טובה."
+          },
+          {
+            "text": "לסיים את הריתוך (30 שניות), SSH לשרת דרך הטלפון בזמן שהמתכת מתקררת, לבצע רולבק לפריסה, ואז לפתור בעיות כראוי מתחנת העבודה",
+            "response": "ניהול משבר מושלם! בטיחות + מהירות + דיבאג שיטתי. ברור שטיפלת בשרפות פרודקשן קודם! 🔥💻🔧"
+          }
+        ]
+      }
+    ]
   },
   "volunteering": {
     "en": [
@@ -354,7 +494,7 @@
         "category": "🌿 Garden, Nature & Outdoors",
         "items": [
           "Advanced gardening: seedlings, seasonal vegetables, composting",
-          "Growing lychee & fruit trees",
+          "Growing fruit trees & vegetables",
           "Fishing with custom tackle & lures",
           "Beach hiking, geography exploration (Sinai, Golan Heights)"
         ]
@@ -438,7 +578,7 @@
         "category": "🌿 גינה, טבע וחוץ",
         "items": [
           "גינון מתקדם: שתילים, ירקות עונתיים, דישון וקומפוסט",
-          "גידול עצי ליצ'י ופירות",
+          "גידול עצי פרי וירקות",
           "דיג עם חכות מותאמות ופתיונות",
           "טיולי חופים, חקר גיאורפיה (סיני, רמת הגולן)"
         ]

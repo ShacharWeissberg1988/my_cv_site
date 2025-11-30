@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HelpCircle, CheckCircle } from 'lucide-react';
 import { Card } from '../ui/Card';
 import { useI18n } from '../../i18n/i18nContext';
 import funFactsData from '../../data/fun_facts.json';
 
+type AdventureOption = { text: string; response: string };
+type AdventureScenario = { question: string; options: AdventureOption[] };
+type SupportedLanguage = 'en' | 'he';
+
+const getRandomScenario = (lang: SupportedLanguage): AdventureScenario => {
+  const scenarios = funFactsData.adventureScenarios[lang] as AdventureScenario[];
+  return scenarios[Math.floor(Math.random() * scenarios.length)];
+};
+
 export const ChooseAdventure: React.FC = () => {
   const { t, language } = useI18n();
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const scenario = funFactsData.adventureScenario[language as 'en' | 'he'];
+  const languageKey: SupportedLanguage = language === 'he' ? 'he' : 'en';
+  const [scenario, setScenario] = useState<AdventureScenario>(() => getRandomScenario(languageKey));
+
+  useEffect(() => {
+    setScenario(getRandomScenario(languageKey));
+    setSelectedOption(null);
+  }, [languageKey]);
 
   const handleOptionClick = (index: number) => {
     setSelectedOption(index);
@@ -16,6 +31,7 @@ export const ChooseAdventure: React.FC = () => {
 
   const resetQuiz = () => {
     setSelectedOption(null);
+    setScenario(getRandomScenario(languageKey));
   };
 
   return (
