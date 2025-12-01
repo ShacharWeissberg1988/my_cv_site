@@ -13,14 +13,14 @@ import funFactsData from '../../data/fun_facts.json';
 const hobbyImageFolders: Record<number, { folder: string; count: number }> = {
   0: { folder: 'creation-tech', count: 3 }, // 1.jpg, 2.jpg, 3.jpg
   1: { folder: 'garden-nature', count: 3 },
-  2: { folder: 'cooking-food', count: 3 },
+  2: { folder: 'cooking-food', count: 0 },
   3: { folder: 'gaming-pc', count: 3 },
-  4: { folder: 'books-culture', count: 3 },
-  5: { folder: 'visual-creation', count: 3 },
+  4: { folder: 'books-culture', count: 0 },
+  5: { folder: 'visual-creation', count: 0 },
   6: { folder: 'water-maritime', count: 3 },
-  7: { folder: 'management-startups', count: 3 },
-  8: { folder: 'music-events', count: 3 },
-  9: { folder: 'personal-side', count: 3 },
+  7: { folder: 'management-startups', count: 0 },
+  8: { folder: 'music-events', count: 0 },
+  9: { folder: 'personal-side', count: 1 },
 };
 
 export const TabFunAndVolunteering: React.FC = () => {
