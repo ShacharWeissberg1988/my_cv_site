@@ -111,14 +111,23 @@ export const TabFunAndVolunteering: React.FC = () => {
               {/* Hover Slideshow Popup */}
               <AnimatePresence>
                 {hoveredIndex === index && (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8, y: -20 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    exit={{ opacity: 0, scale: 0.8, y: -20 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute z-50 -top-4 left-0 md:left-1/2 md:-translate-x-1/2"
-                  >
-                    <div className="relative">
+                  <>
+                    {/* Backdrop overlay */}
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="fixed inset-0 bg-black/60 z-40"
+                      onClick={() => setHoveredIndex(null)}
+                    />
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.8 }}
+                      transition={{ duration: 0.2 }}
+                      className="fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    >
+                      <div className="relative">
                       {/* Slideshow Container */}
                       <div className="relative w-[512px] h-96 rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
                         <AnimatePresence mode="wait">
@@ -173,6 +182,7 @@ export const TabFunAndVolunteering: React.FC = () => {
                       </div>
                     </div>
                   </motion.div>
+                  </>
                 )}
               </AnimatePresence>
 
