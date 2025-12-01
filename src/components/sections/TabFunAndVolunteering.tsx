@@ -120,7 +120,7 @@ export const TabFunAndVolunteering: React.FC = () => {
                   >
                     <div className="relative">
                       {/* Slideshow Container */}
-                      <div className="relative w-64 h-48 rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
+                      <div className="relative w-[512px] h-96 rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
                         <AnimatePresence mode="wait">
                           <motion.img
                             key={`${index}-${currentImageIndex[index] ?? 0}`}
