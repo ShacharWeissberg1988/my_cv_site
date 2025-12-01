@@ -161,9 +161,6 @@ export const TabFunAndVolunteering: React.FC = () => {
                               />
                             </AnimatePresence>
 
-                            {/* Gradient overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent pointer-events-none" />
-
                             {/* Navigation Arrows */}
                             <button
                               onClick={(e) => handlePrevImage(index, e)}
