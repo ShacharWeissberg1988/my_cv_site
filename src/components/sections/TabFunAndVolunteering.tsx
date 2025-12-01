@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card } from '../ui/Card';
 import { DidYouKnowGame } from '../widgets/DidYouKnowGame';
 import { PersonalityStats } from '../widgets/PersonalityStats';
@@ -9,23 +9,71 @@ import { SideProjectGallery } from '../widgets/SideProjectGallery';
 import { useI18n } from '../../i18n/i18nContext';
 import funFactsData from '../../data/fun_facts.json';
 
-// Image mapping for each hobby category
-const hobbyImages: Record<number, string> = {
-  0: 'creation-tech.jpg',
-  1: 'garden-nature.jpg',
-  2: 'cooking-food.jpg',
-  3: 'gaming-pc.jpg',
-  4: 'books-culture.jpg',
-  5: 'visual-creation.jpg',
-  6: 'water-maritime.jpg',
-  7: 'management-startups.jpg',
-  8: 'music-events.jpg',
-  9: 'personal-side.jpg',
+// Image folders for each hobby category (each category can have multiple images)
+const hobbyImageFolders: Record<number, { folder: string; count: number }> = {
+  0: { folder: 'creation-tech', count: 3 }, // 1.jpg, 2.jpg, 3.jpg
+  1: { folder: 'garden-nature', count: 3 },
+  2: { folder: 'cooking-food', count: 3 },
+  3: { folder: 'gaming-pc', count: 3 },
+  4: { folder: 'books-culture', count: 3 },
+  5: { folder: 'visual-creation', count: 3 },
+  6: { folder: 'water-maritime', count: 3 },
+  7: { folder: 'management-startups', count: 3 },
+  8: { folder: 'music-events', count: 3 },
+  9: { folder: 'personal-side', count: 3 },
 };
 
 export const TabFunAndVolunteering: React.FC = () => {
   const { t, language } = useI18n();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState<Record<number, number>>({});
+
+  // Auto-advance slideshow when hovering
+  useEffect(() => {
+    if (hoveredIndex === null) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => {
+        const current = prev[hoveredIndex] ?? 0;
+        const imageCount = hobbyImageFolders[hoveredIndex]?.count ?? 1;
+        return {
+          ...prev,
+          [hoveredIndex]: (current + 1) % imageCount,
+        };
+      });
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(interval);
+  }, [hoveredIndex]);
+
+  const handlePrevImage = (categoryIndex: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) => {
+      const current = prev[categoryIndex] ?? 0;
+      const imageCount = hobbyImageFolders[categoryIndex]?.count ?? 1;
+      return {
+        ...prev,
+        [categoryIndex]: current === 0 ? imageCount - 1 : current - 1,
+      };
+    });
+  };
+
+  const handleNextImage = (categoryIndex: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) => {
+      const current = prev[categoryIndex] ?? 0;
+      const imageCount = hobbyImageFolders[categoryIndex]?.count ?? 1;
+      return {
+        ...prev,
+        [categoryIndex]: (current + 1) % imageCount,
+      };
+    });
+  };
+
+  const getImagePath = (categoryIndex: number, imageIndex: number) => {
+    const folder = hobbyImageFolders[categoryIndex]?.folder;
+    return `${import.meta.env.BASE_URL}images/${folder}/${imageIndex + 1}.jpg`;
+  };
 
   return (
     <motion.div
@@ -60,7 +108,7 @@ export const TabFunAndVolunteering: React.FC = () => {
                 {hobbyCategory.category}
               </h4>
 
-              {/* Hover Image Popup */}
+              {/* Hover Slideshow Popup */}
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.div
@@ -68,20 +116,61 @@ export const TabFunAndVolunteering: React.FC = () => {
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.8, y: -20 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute z-50 -top-4 left-0 md:left-1/2 md:-translate-x-1/2 pointer-events-none"
+                    className="absolute z-50 -top-4 left-0 md:left-1/2 md:-translate-x-1/2"
                   >
                     <div className="relative">
-                      <img
-                        src={`${import.meta.env.BASE_URL}images/${hobbyImages[index]}`}
-                        alt={hobbyCategory.category}
-                        className="w-64 h-48 object-cover rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                        }}
-                      />
-                      {/* Gradient overlay for better text visibility */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent rounded-lg" />
+                      {/* Slideshow Container */}
+                      <div className="relative w-64 h-48 rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
+                        <AnimatePresence mode="wait">
+                          <motion.img
+                            key={`${index}-${currentImageIndex[index] ?? 0}`}
+                            src={getImagePath(index, currentImageIndex[index] ?? 0)}
+                            alt={`${hobbyCategory.category} ${(currentImageIndex[index] ?? 0) + 1}`}
+                            className="w-full h-full object-cover"
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -50 }}
+                            transition={{ duration: 0.3 }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </AnimatePresence>
+
+                        {/* Gradient overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent pointer-events-none" />
+
+                        {/* Navigation Arrows */}
+                        <button
+                          onClick={(e) => handlePrevImage(index, e)}
+                          className="absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-dark-bg/70 hover:bg-primary-purple/50 rounded-full border border-primary-cyan/50 transition-colors pointer-events-auto"
+                          aria-label="Previous image"
+                        >
+                          <ChevronLeft className="text-primary-cyan" size={20} />
+                        </button>
+                        <button
+                          onClick={(e) => handleNextImage(index, e)}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-dark-bg/70 hover:bg-primary-purple/50 rounded-full border border-primary-cyan/50 transition-colors pointer-events-auto"
+                          aria-label="Next image"
+                        >
+                          <ChevronRight className="text-primary-cyan" size={20} />
+                        </button>
+
+                        {/* Slide Indicators */}
+                        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
+                          {Array.from({ length: hobbyImageFolders[index]?.count ?? 1 }).map((_, i) => (
+                            <div
+                              key={i}
+                              className={`h-1.5 rounded-full transition-all ${
+                                i === (currentImageIndex[index] ?? 0)
+                                  ? 'w-6 bg-primary-cyan'
+                                  : 'w-1.5 bg-gray-500'
+                              }`}
+                            />
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </motion.div>
                 )}
