@@ -47,7 +47,7 @@ export const TabAboutMe: React.FC = () => {
         </div>
       </Card>
 
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <Card className="aspect-video bg-dark-bg-secondary flex items-center justify-center overflow-hidden">
           {!videoError ? (
             <video
