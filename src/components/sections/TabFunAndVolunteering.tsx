@@ -145,7 +145,7 @@ export const TabFunAndVolunteering: React.FC = () => {
                                 key={`${index}-${currentImageIndex[index] ?? 0}`}
                                 src={getImagePath(index, currentImageIndex[index] ?? 0)}
                                 alt={`${hobbyCategory.category} ${(currentImageIndex[index] ?? 0) + 1}`}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                                 initial={{ opacity: 0, x: 50 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -50 }}
