@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Card } from '../ui/Card';
@@ -108,91 +109,94 @@ export const TabFunAndVolunteering: React.FC = () => {
               </h4>
 
               {/* Click Slideshow Popup */}
-              <AnimatePresence>
-                {hoveredIndex === index && (
-                  <>
-                    {/* Backdrop overlay */}
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      className="fixed inset-0 bg-black/60 z-40"
-                      onClick={() => setHoveredIndex(null)}
-                    />
-                    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+              {createPortal(
+                <AnimatePresence>
+                  {hoveredIndex === index && (
+                    <>
+                      {/* Backdrop overlay */}
                       <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.8 }}
-                        transition={{ duration: 0.2 }}
-                        className="relative"
-                      >
-                        {/* Close Button */}
-                        <button
-                          onClick={() => setHoveredIndex(null)}
-                          className="absolute -top-3 -right-3 z-10 p-2 bg-dark-bg border-2 border-primary-cyan rounded-full hover:bg-primary-purple/50 transition-colors"
-                          aria-label="Close slideshow"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 bg-black/60 z-40"
+                        onClick={() => setHoveredIndex(null)}
+                      />
+                      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                        <motion.div
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0, scale: 0.8 }}
+                          transition={{ duration: 0.2 }}
+                          className="relative"
                         >
-                          <X className="text-primary-cyan" size={20} />
-                        </button>
-
-                        {/* Slideshow Container */}
-                        <div className="relative w-full max-w-[512px] h-96 rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
-                          <AnimatePresence mode="wait">
-                            <motion.img
-                              key={`${index}-${currentImageIndex[index] ?? 0}`}
-                              src={getImagePath(index, currentImageIndex[index] ?? 0)}
-                              alt={`${hobbyCategory.category} ${(currentImageIndex[index] ?? 0) + 1}`}
-                              className="w-full h-full object-cover"
-                              initial={{ opacity: 0, x: 50 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              exit={{ opacity: 0, x: -50 }}
-                              transition={{ duration: 0.3 }}
-                              onError={(e) => {
-                                const target = e.target as HTMLImageElement;
-                                target.style.display = 'none';
-                              }}
-                            />
-                          </AnimatePresence>
-
-                          {/* Gradient overlay */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent pointer-events-none" />
-
-                          {/* Navigation Arrows */}
+                          {/* Close Button */}
                           <button
-                            onClick={(e) => handlePrevImage(index, e)}
-                            className="absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-dark-bg/70 hover:bg-primary-purple/50 rounded-full border border-primary-cyan/50 transition-colors pointer-events-auto"
-                            aria-label="Previous image"
+                            onClick={() => setHoveredIndex(null)}
+                            className="absolute -top-3 -right-3 z-10 p-2 bg-dark-bg border-2 border-primary-cyan rounded-full hover:bg-primary-purple/50 transition-colors"
+                            aria-label="Close slideshow"
                           >
-                            <ChevronLeft className="text-primary-cyan" size={20} />
-                          </button>
-                          <button
-                            onClick={(e) => handleNextImage(index, e)}
-                            className="absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-dark-bg/70 hover:bg-primary-purple/50 rounded-full border border-primary-cyan/50 transition-colors pointer-events-auto"
-                            aria-label="Next image"
-                          >
-                            <ChevronRight className="text-primary-cyan" size={20} />
+                            <X className="text-primary-cyan" size={20} />
                           </button>
 
-                          {/* Slide Indicators */}
-                          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
-                            {Array.from({ length: hobbyImageFolders[index]?.count ?? 1 }).map((_, i) => (
-                              <div
-                                key={i}
-                                className={`h-1.5 rounded-full transition-all ${
-                                  i === (currentImageIndex[index] ?? 0)
-                                    ? 'w-6 bg-primary-cyan'
-                                    : 'w-1.5 bg-gray-500'
-                                }`}
+                          {/* Slideshow Container */}
+                          <div className="relative w-full max-w-[512px] h-96 rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
+                            <AnimatePresence mode="wait">
+                              <motion.img
+                                key={`${index}-${currentImageIndex[index] ?? 0}`}
+                                src={getImagePath(index, currentImageIndex[index] ?? 0)}
+                                alt={`${hobbyCategory.category} ${(currentImageIndex[index] ?? 0) + 1}`}
+                                className="w-full h-full object-cover"
+                                initial={{ opacity: 0, x: 50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -50 }}
+                                transition={{ duration: 0.3 }}
+                                onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.style.display = 'none';
+                                }}
                               />
-                            ))}
+                            </AnimatePresence>
+
+                            {/* Gradient overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent pointer-events-none" />
+
+                            {/* Navigation Arrows */}
+                            <button
+                              onClick={(e) => handlePrevImage(index, e)}
+                              className="absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-dark-bg/70 hover:bg-primary-purple/50 rounded-full border border-primary-cyan/50 transition-colors pointer-events-auto"
+                              aria-label="Previous image"
+                            >
+                              <ChevronLeft className="text-primary-cyan" size={20} />
+                            </button>
+                            <button
+                              onClick={(e) => handleNextImage(index, e)}
+                              className="absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-dark-bg/70 hover:bg-primary-purple/50 rounded-full border border-primary-cyan/50 transition-colors pointer-events-auto"
+                              aria-label="Next image"
+                            >
+                              <ChevronRight className="text-primary-cyan" size={20} />
+                            </button>
+
+                            {/* Slide Indicators */}
+                            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
+                              {Array.from({ length: hobbyImageFolders[index]?.count ?? 1 }).map((_, i) => (
+                                <div
+                                  key={i}
+                                  className={`h-1.5 rounded-full transition-all ${
+                                    i === (currentImageIndex[index] ?? 0)
+                                      ? 'w-6 bg-primary-cyan'
+                                      : 'w-1.5 bg-gray-500'
+                                  }`}
+                                />
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                      </motion.div>
-                    </div>
-                  </>
-                )}
-              </AnimatePresence>
+                        </motion.div>
+                      </div>
+                    </>
+                  )}
+                </AnimatePresence>,
+                document.body
+              )}
 
               <ul className="space-y-2">
                 {hobbyCategory.items.map((item, i) => (
