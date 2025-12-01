@@ -19,18 +19,18 @@ export const TabHW: React.FC = () => {
     >
       <div className="flex items-center gap-3 mb-6">
         <Cpu className="text-primary-purple" size={32} />
-        <h2 className="text-3xl font-bold gradient-text">{t('tabs.hw.title')}</h2>
+        <h2 className="text-3xl font-bold text-primary-cyan">{t('tabs.hw.title')}</h2>
       </div>
 
       {/* Core Skills */}
       <Card>
-        <h3 className="text-2xl font-semibold mb-4 gradient-text">{language === 'he' ? 'מיומנויות ליבה' : 'Core Skills'}</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-primary-cyan">{language === 'he' ? 'מיומנויות ליבה' : 'Core Skills'}</h3>
         <SkillsRadar skills={hwData.skills[currentLang]} />
       </Card>
 
       {/* Expertise Areas */}
       <Card>
-        <h3 className="text-2xl font-semibold mb-4 gradient-text">{language === 'he' ? 'תחומי התמחות' : 'Expertise Areas'}</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-primary-cyan">{language === 'he' ? 'תחומי התמחות' : 'Expertise Areas'}</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {hwData.expertise[currentLang].map((area, index) => (
             <div key={index} className="space-y-3">
@@ -50,7 +50,7 @@ export const TabHW: React.FC = () => {
 
       {/* Work Experience */}
       <div className="space-y-4">
-        <h3 className="text-2xl font-semibold gradient-text flex items-center gap-2">
+        <h3 className="text-2xl font-semibold text-primary-cyan flex items-center gap-2">
           <Building2 className="text-primary-cyan" size={24} />
           {language === 'he' ? 'ניסיון תעסוקתי' : 'Work Experience'}
         </h3>

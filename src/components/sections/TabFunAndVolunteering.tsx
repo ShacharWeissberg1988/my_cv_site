@@ -21,7 +21,7 @@ export const TabFunAndVolunteering: React.FC = () => {
     >
       <div className="flex items-center gap-3 mb-6">
         <Sparkles className="text-primary-cyan" size={32} />
-        <h2 className="text-3xl font-bold gradient-text">{t('tabs.fun.title')}</h2>
+        <h2 className="text-3xl font-bold text-primary-cyan">{t('tabs.fun.title')}</h2>
       </div>
 
       <DidYouKnowGame />
@@ -33,7 +33,7 @@ export const TabFunAndVolunteering: React.FC = () => {
       <SideProjectGallery />
 
       <Card>
-        <h3 className="text-2xl font-bold mb-6 gradient-text">{t('widgets.hobbies.title')}</h3>
+        <h3 className="text-2xl font-bold mb-6 text-primary-cyan">{t('widgets.hobbies.title')}</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {funFactsData.hobbies[language as 'en' | 'he'].map((hobbyCategory, index) => (
             <div key={index} className="space-y-3">

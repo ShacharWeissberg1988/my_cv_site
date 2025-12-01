@@ -36,7 +36,7 @@ export const AppLayout: React.FC = () => {
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold text-center gradient-text"
+            className="text-4xl md:text-5xl font-bold text-center text-primary-cyan"
             whileHover={{
               textShadow: '0 0 20px rgba(147, 51, 234, 0.5), 0 0 40px rgba(6, 182, 212, 0.3)',
             }}

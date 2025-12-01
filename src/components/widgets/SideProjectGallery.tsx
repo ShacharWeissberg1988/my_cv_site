@@ -13,7 +13,7 @@ export const SideProjectGallery: React.FC = () => {
     <Card>
       <div className="flex items-center gap-3 mb-6">
         <Wrench className="text-primary-cyan" size={28} />
-        <h3 className="text-2xl font-bold gradient-text">{t('widgets.sideProjects.title')}</h3>
+        <h3 className="text-2xl font-bold text-primary-cyan">{t('widgets.sideProjects.title')}</h3>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

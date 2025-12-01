@@ -12,7 +12,7 @@ export const VolunteeringCards: React.FC = () => {
     <div className="space-y-4">
       <div className="flex items-center gap-2 mb-4">
         <Heart className="text-primary-purple" size={24} />
-        <h3 className="text-2xl font-bold gradient-text">{language === 'he' ? 'התנדבות' : 'Volunteering'}</h3>
+        <h3 className="text-2xl font-bold text-primary-cyan">{language === 'he' ? 'התנדבות' : 'Volunteering'}</h3>
       </div>
       {volunteering.map((item, index) => (
         <Card key={index}>

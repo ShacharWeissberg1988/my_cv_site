@@ -22,7 +22,7 @@ export const DidYouKnowGame: React.FC = () => {
     <Card className="relative overflow-hidden">
       <div className="flex items-center gap-2 mb-4">
         <Lightbulb className="text-primary-cyan" size={24} />
-        <h3 className="text-xl font-bold gradient-text">{language === 'he' ? 'האם ידעת?' : 'Did You Know?'}</h3>
+        <h3 className="text-xl font-bold text-primary-cyan">{language === 'he' ? 'האם ידעת?' : 'Did You Know?'}</h3>
       </div>
       <AnimatePresence mode="wait">
         <motion.p

@@ -38,7 +38,7 @@ export const ChooseAdventure: React.FC = () => {
     <Card>
       <div className="flex items-center gap-3 mb-6">
         <HelpCircle className="text-primary-purple" size={28} />
-        <h3 className="text-2xl font-bold gradient-text">{t('widgets.chooseAdventure.title')}</h3>
+        <h3 className="text-2xl font-bold text-primary-cyan">{t('widgets.chooseAdventure.title')}</h3>
       </div>
 
       <div className="space-y-6">

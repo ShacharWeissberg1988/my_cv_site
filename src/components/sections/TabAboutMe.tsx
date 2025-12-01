@@ -20,14 +20,14 @@ export const TabAboutMe: React.FC = () => {
     >
       <div className="flex items-center gap-3 mb-6">
         <User className="text-primary-cyan" size={32} />
-        <h2 className="text-3xl font-bold gradient-text">{t('tabs.aboutMe.title')}</h2>
+        <h2 className="text-3xl font-bold text-primary-cyan">{t('tabs.aboutMe.title')}</h2>
       </div>
 
       <Card>
         <div className="flex flex-col md:flex-row gap-6 items-start">
           {/* About Text */}
           <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-4 gradient-text">About Shachar Weissberg</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary-cyan">About Shachar Weissberg</h3>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>{t('tabs.aboutMe.bio.paragraph1')}</p>
               <p>{t('tabs.aboutMe.bio.paragraph2')}</p>

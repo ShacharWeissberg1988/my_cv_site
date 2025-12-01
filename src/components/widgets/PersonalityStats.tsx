@@ -18,7 +18,7 @@ export const PersonalityStats: React.FC = () => {
 
   return (
     <Card>
-      <h3 className="text-2xl font-bold mb-6 gradient-text">{t('widgets.personalityStats.title')}</h3>
+      <h3 className="text-2xl font-bold mb-6 text-primary-cyan">{t('widgets.personalityStats.title')}</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {Object.entries(traits).map(([trait, value], index) => (
           <motion.div
@@ -39,7 +39,7 @@ export const PersonalityStats: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div className="text-2xl font-bold gradient-text">{value}</div>
+                <div className="text-2xl font-bold text-primary-cyan">{value}</div>
                 <div className="text-xs text-gray-500">/10</div>
               </div>
             </div>

@@ -59,7 +59,7 @@
       },
       {
         "id": 15,
-        "fact": "Interested in sailing clubs, yachts, skippers, beaches, and marine wildlife."
+        "fact": "Interested in yachts, skippers, beaches, and marine wildlife."
       },
       {
         "id": 16,
@@ -141,7 +141,7 @@
       },
       {
         "id": 15,
-        "fact": "מתעניין במועדוני שייט, יאכטות, סקיפרים, חופים וחיות ים."
+        "fact": "מתעניין ביאכטות, סקיפרים, חופים וחיות ים."
       },
       {
         "id": 16,
@@ -536,8 +536,8 @@
       {
         "category": "🏊‍♂️ Water & Maritime",
         "items": [
-          "Interest in sailing clubs, yachts & skippers",
-          "Beaches, sea rocks & marine life"
+          "Yachts, skippers & beaches",
+          "Marine wildlife"
         ]
       },
       {
@@ -620,8 +620,8 @@
       {
         "category": "🏊‍♂️ מים ופעילות ימית",
         "items": [
-          "עניין במועדוני שייט, יאכטות וסקיפרים",
-          "חופים, סלעי ים וחיות ים"
+          "יאכטות, סקיפרים וחופים",
+          "חיות ים"
         ]
       },
       {
