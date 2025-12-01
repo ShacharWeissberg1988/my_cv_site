@@ -28,6 +28,7 @@ export const TabFunAndVolunteering: React.FC = () => {
   const { t, language } = useI18n();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<Record<number, number>>({});
+  const [imageDimensions, setImageDimensions] = useState<{ width: number; height: number } | null>(null);
 
   // Auto-advance slideshow when hovering
   useEffect(() => {
@@ -74,6 +75,35 @@ export const TabFunAndVolunteering: React.FC = () => {
   const getImagePath = (categoryIndex: number, imageIndex: number) => {
     const folder = hobbyImageFolders[categoryIndex]?.folder;
     return `${import.meta.env.BASE_URL}images/${folder}/${imageIndex + 1}.jpg`;
+  };
+
+  const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    setImageDimensions({
+      width: img.naturalWidth,
+      height: img.naturalHeight,
+    });
+  };
+
+  const getContainerStyle = () => {
+    if (!imageDimensions) {
+      return { width: '50vw', height: '50vh' };
+    }
+
+    const aspectRatio = imageDimensions.width / imageDimensions.height;
+    const maxWidth = window.innerWidth * 0.8; // 80% of viewport width
+    const maxHeight = window.innerHeight * 0.8; // 80% of viewport height
+
+    let width = maxWidth;
+    let height = width / aspectRatio;
+
+    // If height exceeds max, constrain by height instead
+    if (height > maxHeight) {
+      height = maxHeight;
+      width = height * aspectRatio;
+    }
+
+    return { width: `${width}px`, height: `${height}px` };
   };
 
   return (
@@ -143,7 +173,10 @@ export const TabFunAndVolunteering: React.FC = () => {
                           </button>
 
                           {/* Slideshow Container */}
-                          <div className="relative w-[50vw] h-[50vh] rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
+                          <div
+                            className="relative rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden"
+                            style={getContainerStyle()}
+                          >
                             <AnimatePresence mode="wait">
                               <motion.img
                                 key={`${index}-${currentImageIndex[index] ?? 0}`}
@@ -154,6 +187,7 @@ export const TabFunAndVolunteering: React.FC = () => {
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -50 }}
                                 transition={{ duration: 0.8 }}
+                                onLoad={handleImageLoad}
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
                                   target.style.display = 'none';
