@@ -42,7 +42,7 @@ export const TabFunAndVolunteering: React.FC = () => {
           [hoveredIndex]: (current + 1) % imageCount,
         };
       });
-    }, 2000); // Change image every 2 seconds
+    }, 4000); // Change image every 4 seconds
 
     return () => clearInterval(interval);
   }, [hoveredIndex]);
@@ -139,7 +139,7 @@ export const TabFunAndVolunteering: React.FC = () => {
                           </button>
 
                           {/* Slideshow Container */}
-                          <div className="relative w-full max-w-[512px] h-96 rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
+                          <div className="relative w-[50vw] h-[50vh] rounded-lg border-2 border-primary-cyan shadow-xl shadow-primary-purple/30 overflow-hidden">
                             <AnimatePresence mode="wait">
                               <motion.img
                                 key={`${index}-${currentImageIndex[index] ?? 0}`}
@@ -149,7 +149,7 @@ export const TabFunAndVolunteering: React.FC = () => {
                                 initial={{ opacity: 0, x: 50 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -50 }}
-                                transition={{ duration: 0.3 }}
+                                transition={{ duration: 0.8 }}
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
                                   target.style.display = 'none';
